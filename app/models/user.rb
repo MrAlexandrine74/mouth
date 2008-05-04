@@ -11,26 +11,20 @@ class User < ActiveRecord::Base
   validates_length_of       :login,    :within => 3..40
   validates_length_of       :email,    :within => 3..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
+  before_save :encrypt_password
   
-  before_save               :encrypt_password
-  
-  # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
   attr_accessible :login, :email, :password, :password_confirmation
 
   acts_as_state_machine :initial => :pending
   state :passive
-  state :pending, :enter => :make_activation_code
-  state :active,  :enter => :do_activate
+  state :pending
+  state :active
   state :suspended
   state :deleted, :enter => :do_delete
 
   event :register do
     transitions :from => :passive, :to => :pending, :guard => Proc.new {|u| !(u.crypted_password.blank? && u.password.blank?) }
-  end
-  
-  event :activate do
-    transitions :from => :pending, :to => :active 
   end
   
   event :suspend do
@@ -42,8 +36,8 @@ class User < ActiveRecord::Base
   end
 
   event :unsuspend do
-    transitions :from => :suspended, :to => :active,  :guard => Proc.new {|u| !u.activated_at.blank? }
-    transitions :from => :suspended, :to => :pending, :guard => Proc.new {|u| !u.activation_code.blank? }
+    transitions :from => :suspended, :to => :active
+    transitions :from => :suspended, :to => :pending
     transitions :from => :suspended, :to => :passive
   end
 
@@ -92,35 +86,19 @@ class User < ActiveRecord::Base
     save(false)
   end
 
-  # Returns true if the user has just been activated.
-  def recently_activated?
-    @activated
+protected
+  # before filter 
+  def encrypt_password
+    return if password.blank?
+    self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
+    self.crypted_password = encrypt(password)
   end
-
-  protected
-    # before filter 
-    def encrypt_password
-      return if password.blank?
-      self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
-      self.crypted_password = encrypt(password)
-    end
-      
-    def password_required?
-      crypted_password.blank? || !password.blank?
-    end
     
-    def make_activation_code
-      self.deleted_at = nil
-      self.activation_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
-    end
-    
-    def do_delete
-      self.deleted_at = Time.now.utc
-    end
-
-    def do_activate
-      @activated = true
-      self.activated_at = Time.now.utc
-      self.deleted_at = self.activation_code = nil
-    end
+  def password_required?
+    crypted_password.blank? || !password.blank?
+  end
+  
+  def do_delete
+    self.deleted_at = Time.now.utc
+  end
 end

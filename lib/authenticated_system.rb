@@ -5,10 +5,6 @@ module AuthenticatedSystem
     def logged_in?
       !!current_user
     end
-    
-    def is_admin?
-      logged_in? && current_user.admin?
-    end
 
     # Accesses the current user from the session. 
     # Future calls avoid the database because nil is not equal to false.
@@ -93,7 +89,7 @@ module AuthenticatedSystem
     # Inclusion hook to make #current_user and #logged_in?
     # available as ActionView helper methods.
     def self.included(base)
-      base.send :helper_method, :current_user, :logged_in?, :is_admin?
+      base.send :helper_method, :current_user, :logged_in?
     end
 
     # Called from #current_user.  First attempt to login by the user id stored in the session.
@@ -103,8 +99,8 @@ module AuthenticatedSystem
 
     # Called from #current_user.  Now, attempt to login by basic authentication information.
     def login_from_basic_auth
-      authenticate_with_http_basic do |email, password|
-        self.current_user = User.authenticate(email, password)
+      authenticate_with_http_basic do |username, password|
+        self.current_user = User.authenticate(username, password)
       end
     end
 

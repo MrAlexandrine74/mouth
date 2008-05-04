@@ -4,4 +4,10 @@ development:
   username: root
   password: 
   database: mouth_development
-    
+  
+test:
+  adapter: mysql
+  host: localhost
+  username: root
+  password: 
+  database: mouth_test
