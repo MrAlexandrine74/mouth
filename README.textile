@@ -1,0 +1,6 @@
+h1. Mouth
+
+An open-source Rails blogging engine.
+
+h3. Credits
+* "Zach Inglis":http://zachinglis.com
