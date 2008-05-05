@@ -211,3 +211,868 @@ WARNING: You're using the Ruby-based MySQL library that ships with Rails. This l
   [4;35;1mSQL (0.000684)[0m   [0mSHOW TABLES[0m
   [4;36;1mSQL (0.000559)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
   [4;35;1mSQL (0.000737)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000198)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000440)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000321)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.080572)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002967)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001200)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.039562)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000619)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000248)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002195)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000412)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002426)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.044371)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000752)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000600)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000724)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000435)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000310)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000380)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012672)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002070)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000847)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.025748)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000589)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002714)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000611)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001823)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005041)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000628)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000561)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000675)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000163)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000461)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000332)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000418)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002187)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.001825)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.005589)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003414)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000549)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000159)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.054540)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000727)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002705)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005222)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000668)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000556)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000806)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000222)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000523)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000355)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000398)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.076762)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003772)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001198)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.036703)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000807)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002872)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000656)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002084)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008515)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000645)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000473)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000703)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000445)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.003763)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000472)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012411)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003552)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001328)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.041742)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000722)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000189)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002478)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000461)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001848)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004553)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000742)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000591)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000883)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000534)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000415)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000419)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002199)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002051)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000783)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002875)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.043014)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000685)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002137)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005580)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000925)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000674)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000598)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000482)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000332)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.076585)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002794)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001199)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002884)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000593)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000164)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.053819)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000742)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002030)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005578)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000882)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001146)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000604)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000169)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000461)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000322)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000530)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011926)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003020)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001353)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.038150)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000701)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000161)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002234)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000436)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001563)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005059)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000752)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000588)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000682)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000454)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000597)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000410)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012033)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002875)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001173)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003066)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000708)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000198)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.029631)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000642)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002083)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004554)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000832)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000735)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001730)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000236)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000753)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000385)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000432)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.009409)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002199)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000813)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.043400)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000592)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000160)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.003284)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000688)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002042)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005605)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000747)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000572)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000899)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000439)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000322)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000323)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000428)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.016299)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002275)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000949)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.033022)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000580)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000161)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002283)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000807)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002424)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005316)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001131)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000512)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000674)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.004840)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000618)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000364)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000350)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000419)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.084946)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003090)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.002237)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.042877)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000654)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002014)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000418)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001848)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006000)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000982)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000565)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001248)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000436)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000342)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000383)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.091053)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002655)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000830)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002695)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000356)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.038994)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000739)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002411)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005231)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000568)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001011)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001575)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000219)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.000877)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Columns (0.018506)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000453)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000348)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012394)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002881)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001214)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002856)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000371)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000147)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.036817)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001013)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001874)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006999)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000549)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000671)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000669)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000174)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000448)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000309)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000598)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003186)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003399)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000988)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000684)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.065683)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000472)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.001958)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000501)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001911)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005210)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000767)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000560)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000694)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000164)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000444)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000322)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000459)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011997)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002747)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.006991)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.038906)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000606)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000165)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002898)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000702)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001832)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010158)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000804)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000511)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000648)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000435)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000329)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000351)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000410)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011973)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002860)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.006294)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000178)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003082)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000553)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000160)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.041847)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000888)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002126)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005472)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000722)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000507)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000524)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000198)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000445)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000384)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012539)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002785)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001345)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003481)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000581)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000168)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.039570)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001496)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002128)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005043)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000707)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000641)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000933)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000193)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000549)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000344)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000333)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000419)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.069659)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.006180)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.002000)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003641)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000602)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.031681)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000740)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002269)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005532)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000768)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000560)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000869)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000436)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000351)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000408)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013033)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.009547)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001191)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.037509)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000658)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002355)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000635)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002072)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005082)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000626)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000594)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000650)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000495)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000309)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000374)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.017722)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003538)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000890)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.032730)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.002600)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000159)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.001997)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000552)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002090)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006387)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000708)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000563)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000671)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000459)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000312)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000379)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002312)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003748)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001182)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000192)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.042563)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000421)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000250)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002356)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000423)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001601)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005184)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000754)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000548)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000675)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000171)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000462)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000301)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000392)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000420)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013402)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003014)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001184)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.037525)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.001006)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000253)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002308)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002022)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005486)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000646)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000627)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000665)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.119820)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.101563)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.186276)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000513)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000587)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.078878)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002512)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.048916)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000405)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.436172)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.042522)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000203)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.055165)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000677)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002691)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.025672)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000681)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000597)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000716)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000665)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000294)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000373)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000398)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002278)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002001)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000771)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.055116)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000762)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000258)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.046655)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000677)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002332)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.011191)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.002060)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000538)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000739)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000298)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000457)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000452)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000457)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.088625)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.004218)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001422)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.036683)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000902)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000160)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.003080)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001006)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001974)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008689)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000750)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000536)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001052)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000188)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000438)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000293)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000373)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.089607)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002878)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001209)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000429)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003193)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000413)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000161)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.036297)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000716)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001984)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006538)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000954)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000633)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000671)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000175)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000524)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000402)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000492)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.081582)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003708)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000825)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.032962)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000777)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000238)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.003074)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000643)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002593)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.014077)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000699)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000795)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000690)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000436)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000285)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000297)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000370)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.016012)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.004594)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001321)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.034710)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000586)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000160)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002736)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000660)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011319)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006289)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000884)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000768)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000913)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000446)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000299)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000316)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000386)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012376)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.005908)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001885)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002701)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000383)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.043599)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000838)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001992)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005282)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001092)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000603)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000698)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000441)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000285)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001067)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000428)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007201)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002444)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000804)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000257)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.055106)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000618)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002137)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000511)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002491)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006224)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000673)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000565)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000711)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000175)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000442)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000319)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000426)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012082)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002924)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001349)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002773)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000262)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.037753)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000753)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002326)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.014709)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000779)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000745)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000685)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000323)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000471)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000290)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000317)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000431)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003267)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002136)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.003861)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002994)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000585)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.039644)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000815)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002064)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005750)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000660)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000564)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000746)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000437)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000285)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000310)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000445)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001989)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.006146)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.003520)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.004177)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000634)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000157)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.040144)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000887)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002114)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004829)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000574)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000548)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000622)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000163)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000475)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000320)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000384)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013453)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002462)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000888)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002996)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000613)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000203)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.033670)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000884)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002096)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008305)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000607)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000469)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000660)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000245)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000483)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000318)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.019025)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002754)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001130)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003197)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000604)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000160)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.036583)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000890)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002286)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005127)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000673)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000564)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000984)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000437)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000315)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000413)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012315)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003140)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.010017)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.035497)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000727)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000217)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002805)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000918)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002086)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004851)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000640)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000557)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000686)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000178)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000580)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001357)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000382)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000424)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002419)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.005064)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001356)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.026662)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000600)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000173)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002295)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000482)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002017)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.009514)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.003244)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000696)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000661)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000165)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000507)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000424)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000321)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.065781)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.008191)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.002347)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003144)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000610)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000179)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.034364)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000840)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006881)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005618)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000981)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000595)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000819)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000207)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000466)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000449)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000401)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.015289)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002230)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000793)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002855)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000368)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000157)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.027991)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000707)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002089)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005171)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000663)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000583)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000643)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000203)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000444)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000354)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.015649)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.003030)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.002925)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.029717)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000892)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000160)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002325)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000704)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002076)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.016132)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000792)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000505)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000760)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m

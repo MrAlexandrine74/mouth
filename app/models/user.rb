@@ -11,10 +11,10 @@ class User < ActiveRecord::Base
   validates_length_of       :login,    :within => 3..40
   validates_length_of       :email,    :within => 3..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
-  
+
   before_save               :encrypt_password
   
-  attr_accessible :login, :email, :password, :password_confirmation
+  attr_accessible           :login, :email, :password, :password_confirmation
 
   acts_as_state_machine :initial => :pending
   state :passive
@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
 
   event :register do
     transitions :from => :passive, :to => :pending, :guard => Proc.new {|u| !(u.crypted_password.blank? && u.password.blank?) }
+    transitions :from => :passive, :to => :active
   end
   
   event :activate do
