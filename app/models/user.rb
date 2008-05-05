@@ -11,7 +11,9 @@ class User < ActiveRecord::Base
   validates_length_of       :login,    :within => 3..40
   validates_length_of       :email,    :within => 3..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
-  before_save :encrypt_password
+
+  before_create             :make_active_if_first_user
+  before_save               :encrypt_password
   
   # anything else you want your user to change should be added here.
   attr_accessible :login, :email, :password, :password_confirmation
@@ -84,6 +86,10 @@ class User < ActiveRecord::Base
     self.remember_token_expires_at = nil
     self.remember_token            = nil
     save(false)
+  end
+  
+  def make_active_if_first_user
+    self.update_attribute('state', 'active')
   end
 
 protected

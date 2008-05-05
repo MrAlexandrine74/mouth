@@ -62,6 +62,12 @@ class UsersControllerTest < Test::Unit::TestCase
     assert assigns(:user).pending?
   end
 
+  def test_should_sign_up_user_in_active_state_if_first_user
+    User.destroy_all
+    create_user
+    assigns(:user).reload
+    assert assigns(:user).active?
+  end
 
   protected
     def create_user(options = {})
