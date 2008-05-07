@@ -1,0 +1,16 @@
+%h2 Posts
+%ul
+  - @posts.each do |post|
+    %li
+      %p=h post.permalink
+      %p=h post.title
+      %p=h post.excerpt
+      %p=h post.body
+      %p=h post.state
+      %p=h post.published_at
+      %p=h post.user_id
+      %p= link_to 'Show', post
+      %p= link_to 'Edit', edit_post_path(post)
+      %p= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+
+= link_to 'New post', new_post_path

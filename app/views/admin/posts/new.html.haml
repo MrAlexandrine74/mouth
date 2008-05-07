@@ -1,0 +1,7 @@
+%h2 New post
+
+- form_for([:admin, @post]) do |make|
+  = make.error_messages
+  %p= make.submit "Create"
+  
+%p= link_to "Back", admin_posts_path
