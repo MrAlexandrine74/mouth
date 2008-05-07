@@ -1,19 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  permalink: MyString
-  title: MyString
-  excerpt: MyText
+published:
+  permalink: published
+  title: Published Post
+  excerpt: 
   body: MyText
   status: 1
-  published_at: 2008-05-05 13:59:11
+  published_at: 2008-05-05 13:59:01
   user_id: 1
 
-two:
-  permalink: MyString
-  title: MyString
+draft:
+  permalink: draft
+  title: Draft
   excerpt: MyText
   body: MyText
-  status: 1
+  status: 0
   published_at: 2008-05-05 13:59:11
   user_id: 1
