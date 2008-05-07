@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20080505135911) do
     t.string   "title"
     t.text     "excerpt"
     t.text     "body"
-    t.integer  "status"
+    t.string   "state",        :default => "passive"
     t.datetime "published_at"
     t.integer  "user_id"
     t.datetime "created_at"

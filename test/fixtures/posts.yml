@@ -5,7 +5,7 @@ published:
   title: Published Post
   excerpt: 
   body: MyText
-  status: 1
+  state: published
   published_at: 2008-05-05 13:59:01
   user_id: 1
 
@@ -14,6 +14,5 @@ draft:
   title: Draft
   excerpt: MyText
   body: MyText
-  status: 0
-  published_at: 2008-05-05 13:59:11
+  state: draft
   user_id: 1

@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20080505135911
+# Schema version: 20080507182740
 #
 # Table name: posts
 #
@@ -8,7 +8,7 @@
 #  title        :string(255)     
 #  excerpt      :text            
 #  body         :text            
-#  status       :integer(11)     
+#  state        :integer(11)     
 #  published_at :datetime        
 #  user_id      :integer(11)     
 #  created_at   :datetime        
@@ -26,4 +26,8 @@ class Post < ActiveRecord::Base
     transitions :from => :draft, :to => :published
     transitions :from => :private, :to => :published
   end
+  
+  named_scope :drafts,    :conditions => { :state => "draft" }
+  named_scope :private,   :conditions => { :state => "private" }
+  named_scope :published, :conditions => { :state => "published" }
 end

@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.text :excerpt
       t.text :body
-      t.integer :status
+      t.string :state, :null => :no, :default => 'passive'
       t.datetime :published_at
       t.integer :user_id
 

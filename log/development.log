@@ -1739,3 +1739,285 @@ WARNING: You're using the Ruby-based MySQL library that ships with Rails. This l
   [4;36;1mSQL (0.000148)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
   [4;35;1mSQL (0.000444)[0m   [0mSHOW TABLES[0m
   [4;36;1mPost Columns (0.002668)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000174)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000478)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPost Columns (0.035189)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000143)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000451)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPost Columns (0.018396)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000141)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPost Load (0.311668)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Columns (0.018226)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000186)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000527)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.010867)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000577)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080504154944)
+  [4;36;1mSQL (0.000370)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20080505135911)
+  [4;35;1mSQL (0.000387)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenamePostStatusToState (20080507182740)
+  [4;36;1mSQL (0.000518)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002120)[0m   [0mSHOW COLUMNS FROM `posts` LIKE 'status'[0m
+  [4;36;1mSQL (0.225864)[0m   [0;1mALTER TABLE `posts` CHANGE `status` `state` int(11)[0m
+  [4;35;1mSQL (0.000881)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080507182740')[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000427)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.003414)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.003169)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.002689)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.002984)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002417)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000867)[0m   [0mSHOW KEYS FROM `users`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.213166)[0m   [0mDROP DATABASE IF EXISTS `mouth_development`[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.035010)[0m   [0mCREATE DATABASE `mouth_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.037165)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` int(11) DEFAULT NULL, `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.039325)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001012)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.019994)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.006877)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000744)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000599)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000689)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080507182740')[0m
+  [4;35;1mSQL (0.000906)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+  [4;36;1mSQL (0.000812)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000163)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000352)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mPost Columns (0.016775)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mUser Columns (0.002443)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000451)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000416)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000420)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011948)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.002770)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.001139)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.002865)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.002031)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000823)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000161)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.063336)[0m   [0;1mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;35;1mSQL (0.000585)[0m   [0mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.031998)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` int(11) DEFAULT NULL, `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.003102)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000932)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002242)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.036186)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000919)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000569)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000731)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080507182740')[0m
+  [4;35;1mSQL (0.000766)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000462)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000294)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000381)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000412)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013245)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.003184)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.001143)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.002767)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.003802)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001180)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000180)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.040922)[0m   [0;1mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;35;1mSQL (0.000655)[0m   [0mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.029205)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` int(11) DEFAULT NULL, `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.002681)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000835)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002110)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.017842)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000703)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000597)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000655)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080507182740')[0m
+  [4;35;1mSQL (0.000632)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+  [4;36;1mSQL (0.000625)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000334)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000839)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000401)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000558)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001739)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004201)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.027238)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.001203)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.002925)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.002911)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001220)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000156)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.053946)[0m   [0;1mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;35;1mSQL (0.000590)[0m   [0mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.002209)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` int(11) DEFAULT NULL, `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.001913)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000412)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.003331)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.029033)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000773)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000588)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000825)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080507182740')[0m
+  [4;35;1mSQL (0.000572)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+  [4;36;1mSQL (0.000644)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000177)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPost Load (0.000690)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Load (0.001060)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`state` = 'draft') [0m
+  [4;35;1mPost Load (0.001051)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'private') [0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000216)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPost Load (0.000783)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Columns (0.001925)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPost Load (0.000789)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Columns (0.012605)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.001177)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Load (0.001887)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;35;1mPost Load (0.001094)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Load (0.001071)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mSQL (0.000274)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.000467)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-07 18:35:42', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft', `user_id` = 1, `published_at` = '2008-05-05 13:59:11', `state` = 0, `excerpt` = 'MyText', `updated_at` = '2008-05-07 18:42:56' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.010240)[0m   [0mCOMMIT[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000174)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.043045)[0m   [0mDROP DATABASE IF EXISTS `mouth_development`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000156)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000487)[0m   [0mCREATE DATABASE `mouth_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000451)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001760)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.040292)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000690)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000682)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080504154944)
+  [4;35;1mSQL (0.000282)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002252)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000661)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080504154944')[0m
+Migrating to CreatePosts (20080505135911)
+  [4;35;1mSQL (0.000365)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.002288)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000647)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080505135911')[0m
+  [4;36;1mSQL (0.000311)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000422)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002256)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.001999)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.000758)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.002258)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002104)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000840)[0m   [0mSHOW KEYS FROM `users`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000154)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000458)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPost Columns (0.014134)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.001069)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000153)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000461)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPost Columns (0.014452)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.001427)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Load (0.001102)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mPost Load (0.001118)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Load (0.000823)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`state` = 'draft') [0m
+  [4;35;1mPost Load (0.001134)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000250)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Create (0.000386)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published', '2008-05-07 18:50:05', 'New published', 'MyText', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-07 18:46:50')[0m
+  [4;36;1mSQL (0.009823)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000264)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.000481)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-07 18:46:50', `body` = 'MyText', `title` = 'New published', `permalink` = 'published', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-07 18:50:19' WHERE `id` = 823972395[0m
+  [4;35;1mSQL (0.010530)[0m   [0mCOMMIT[0m
+  [4;36;1mPost Load (0.001220)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;35;1mPost Load (0.001210)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.000409)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-07 18:46:50', `body` = 'MyText', `title` = 'New published', `permalink` = 'test', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-07 18:51:06' WHERE `id` = 823972395[0m
+  [4;36;1mSQL (0.009732)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPost Load (0.001173)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Load (0.001206)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;35;1mPost Load (0.001307)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Load (0.001099)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;35;1mPost Load (0.001286)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`state` = 'published') [0m
+  [4;36;1mPost Load (0.011278)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 823972394) AND (`posts`.`state` = 'published') [0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000515)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000395)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000448)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012367)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.002885)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.001218)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.003127)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.004520)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001119)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.062779)[0m   [0;1mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;35;1mSQL (0.000427)[0m   [0mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.002163)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.002749)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000966)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.151628)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.086766)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.001548)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000628)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000628)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+  [4;35;1mSQL (0.000583)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002059)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000409)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000515)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000479)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003195)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.002071)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.001792)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.004799)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.002908)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001983)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000169)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.045513)[0m   [0;1mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;35;1mSQL (0.000507)[0m   [0mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.003361)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.002037)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000449)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002023)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.005966)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.001302)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000669)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000570)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+  [4;35;1mSQL (0.000759)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
