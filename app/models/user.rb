@@ -38,6 +38,7 @@ class User < ActiveRecord::Base
   state :passive
   state :pending
   state :active
+  state :admin
   state :suspended
   state :deleted, :enter => :do_delete
 

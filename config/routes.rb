@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :posts  
   map.resources :users
   map.resource  :session
+  map.root      :posts
   
   # Admin area
   map.namespace :admin do |admin|

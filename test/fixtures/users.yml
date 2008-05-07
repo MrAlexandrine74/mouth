@@ -14,3 +14,10 @@ aaron:
   crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
   created_at: <%= 1.days.ago.to_s :db %>
   state: pending
+superman:
+  id: 3
+  login: superman
+  email: superman@example.com
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 1.year.ago.to_s :db %>
+  state: admin

@@ -40,3 +40,11 @@ class Test::Unit::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+def be_logged_in
+  login_as :quentin
+end
+
+def be_logged_in_and_admin
+  login_as :superman
+end
