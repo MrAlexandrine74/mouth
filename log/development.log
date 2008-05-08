@@ -3512,3 +3512,30 @@ WARNING: You're using the Ruby-based MySQL library that ships with Rails. This l
   [4;35;1mSQL (0.000475)[0m   [0mSELECT version FROM `schema_migrations`[0m
   [4;36;1mSQL (0.002078)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
   [4;35;1mSQL (0.000967)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000179)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000470)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000562)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000410)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.005906)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.003550)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.000832)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.002397)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.005989)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000943)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.033939)[0m   [0;1mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;35;1mSQL (0.000826)[0m   [0mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'posts': DROP TABLE `posts`[0m
+  [4;36;1mSQL (0.033260)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.003056)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000750)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001946)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.005296)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000944)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000631)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.000656)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+  [4;35;1mSQL (0.000676)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m

@@ -1,5 +1,10 @@
 require 'test_helper'
 class Admin::PostsControllerTest < ActionController::TestCase
+  def test_needs_to_be_logged_in
+    get :index
+    assert_redirected_to login_url
+  end
+  
   def test_should_get_index
     be_logged_in_and_admin
     get :index
