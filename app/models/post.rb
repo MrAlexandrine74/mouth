@@ -18,8 +18,14 @@
 class Post < ActiveRecord::Base
   belongs_to :user
   
-  acts_as_state_machine :initial => :draft
+  validates_presence_of   :title
+  validates_uniqueness_of :permalink, :message => "is already used on another post"
   
+  alias_attribute :slug, :permalink
+  
+  has_permalink :title
+  
+  acts_as_state_machine :initial => :draft  
   state :draft
   state :private
   state :published

@@ -35547,3 +35547,1416 @@ Redirected to http://test.host/
 Completed in 0.00625 (160 reqs/sec) | DB: 0.00139 (22%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
   [4;35;1mUser Load (0.001458)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 8) [0m
   [4;36;1mSQL (0.004382)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000219)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000231)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000637)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000254)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000109)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000164)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000279)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000773)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001347)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000222)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000108)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000589)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000173)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000107)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000618)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000174)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000176)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000434)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000759)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000179)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000120)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000109)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000627)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000165)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000097)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000333)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000605)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000185)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000165)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000597)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000161)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000200)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001277)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000284)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000148)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000301)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000120)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000177)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000153)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000169)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000436)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000239)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000214)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000092)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000619)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000168)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000172)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001039)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000243)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000227)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000600)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000169)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000108)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000154)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000399)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000599)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000170)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000107)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000176)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000773)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001129)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000231)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000202)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000089)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000621)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000174)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000254)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000200)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000518)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001134)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000239)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000170)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000216)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000401)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000983)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000211)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000297)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000221)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000447)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001150)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000242)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000191)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000186)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000453)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001004)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000230)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000092)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000280)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000606)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000461)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000239)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000172)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000864)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000365)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000124)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000750)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000926)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000463)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000219)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000147)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000147)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000574)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000953)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000386)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000251)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000405)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001370)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000393)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000229)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000186)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000832)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000978)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000446)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000332)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000111)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000112)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000618)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000653)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mSQL (0.044298)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink IS NULL AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000581)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:11:12', `body` = 'MyText', `title` = 'Foo', `permalink` = NULL, `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:11:12' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000809)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000174)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001175)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mSQL (0.000506)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;35;1mPost Update (0.000353)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:11:12', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:11:12' WHERE `id` = 200520904[0m
+  [4;36;1mSQL (0.001007)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000180)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000086)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000299)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000585)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000735)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000283)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000362)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000654)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000450)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000110)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000814)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000257)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft') [0m
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000085)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000602)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mSQL (0.025309)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink IS NULL AND `posts`.id <> 200520904) [0m
+  [4;35;1mPost Update (0.000320)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:11:21', `body` = 'MyText', `title` = 'Foo', `permalink` = NULL, `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:11:22' WHERE `id` = 200520904[0m
+  [4;36;1mSQL (0.000596)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000092)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000743)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mSQL (0.000303)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000301)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:11:21', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:11:22' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000974)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000275)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000462)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001034)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.034938)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000499)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000749)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000522)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000376)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000926)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000401)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000231)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000607)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000294)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:12:49', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:12:49')[0m
+  [4;36;1mPost Exists (0.046824)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972396) LIMIT 1[0m
+  [4;35;1mSQL (0.000581)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972396) [0m
+  [4;36;1mPost Update (0.000388)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:12:49', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:12:50' WHERE `id` = 823972396[0m
+  [4;35;1mSQL (0.000346)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.001261)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000676)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000320)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000230)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.036054)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:12:50', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:12:49')[0m
+  [4;35;1mSQL (0.000748)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000174)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001672)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000588)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000491)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000439)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:12:49', `body` = 'MyText', `title` = 'Foo', `permalink` = '', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:12:50' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000801)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000634)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000326)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000248)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000238)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:12:49', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:12:50' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000642)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000111)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000589)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000299)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000239)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000256)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000170)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000753)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000283)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000240)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000219)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.014848)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:13:30', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:13:30')[0m
+  [4;36;1mPost Exists (0.000875)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972398) LIMIT 1[0m
+  [4;35;1mSQL (0.000436)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972398) [0m
+  [4;36;1mPost Update (0.000204)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:13:30', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:13:30' WHERE `id` = 823972398[0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000739)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000650)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000266)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000255)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000295)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:13:30', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:13:30')[0m
+  [4;35;1mSQL (0.000605)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000687)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000346)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000254)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:13:30', `body` = 'MyText', `title` = 'Foo', `permalink` = '', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:13:30' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.040384)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001342)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000542)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000261)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:13:30', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:13:30' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000637)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000110)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000191)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000595)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000318)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000216)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000688)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000237)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000214)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000279)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:13:54', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:13:54')[0m
+  [4;36;1mPost Exists (0.000345)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972400) LIMIT 1[0m
+  [4;35;1mSQL (0.000538)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972400) [0m
+  [4;36;1mPost Update (0.000213)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:13:54', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:13:54' WHERE `id` = 823972400[0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000720)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000251)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001088)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000343)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000207)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000206)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.029075)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:13:54', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:13:54')[0m
+  [4;35;1mSQL (0.000893)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001284)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000646)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000494)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000265)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:13:54', `body` = 'MyText', `title` = 'Foo', `permalink` = '', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:13:54' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000711)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001043)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000537)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000443)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000300)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:13:54', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:13:54' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000672)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000108)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000449)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000947)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000315)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000212)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000226)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000665)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000494)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000253)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000247)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:14:43', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:14:43')[0m
+  [4;36;1mPost Exists (0.000361)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972402) LIMIT 1[0m
+  [4;35;1mSQL (0.000335)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972402) [0m
+  [4;36;1mPost Update (0.000198)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:14:43', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:14:43' WHERE `id` = 823972402[0m
+  [4;35;1mSQL (0.000279)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000670)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000755)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000284)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000247)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000232)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:14:43', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:14:43')[0m
+  [4;35;1mSQL (0.000667)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000654)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000791)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000294)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000287)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:14:43', `body` = 'MyText', `title` = 'Foo', `permalink` = '', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:14:43' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000682)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000668)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000328)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000426)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000271)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:14:43', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:14:43' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000659)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000151)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000309)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000872)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000339)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000212)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000233)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001422)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000395)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000255)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000253)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:15:50', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:15:50')[0m
+  [4;36;1mPost Exists (0.000320)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972404) LIMIT 1[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972404) [0m
+  [4;36;1mPost Update (0.000573)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:15:50', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:15:50' WHERE `id` = 823972404[0m
+  [4;35;1mSQL (0.000322)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000718)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001226)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000511)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000251)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000201)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000246)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:15:50', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:15:50')[0m
+  [4;35;1mSQL (0.000750)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000770)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000388)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000256)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000251)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:15:50', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:15:50' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000818)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000634)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000330)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000259)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:15:50', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:15:50' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.027876)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000164)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000201)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000328)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000641)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000294)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000328)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000241)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000604)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000260)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000215)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000238)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:17:57', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:17:57')[0m
+  [4;36;1mPost Exists (0.000392)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972406) LIMIT 1[0m
+  [4;35;1mSQL (0.000262)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972406) [0m
+  [4;36;1mPost Update (0.000199)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:17:57', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:17:57' WHERE `id` = 823972406[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.001608)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000281)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001124)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000370)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000314)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000351)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000430)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:17:57', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:17:57')[0m
+  [4;35;1mSQL (0.000688)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000697)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000328)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000295)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:17:57', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:17:57' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000606)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000655)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000420)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000252)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000237)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:17:57', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:17:57' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000585)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000313)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000264)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000171)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000608)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000290)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000208)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000423)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000586)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000257)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000212)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.057060)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:20:12', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:20:12')[0m
+  [4;36;1mPost Exists (0.000647)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972408) LIMIT 1[0m
+  [4;35;1mSQL (0.000510)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972408) [0m
+  [4;36;1mPost Update (0.000307)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:12', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:12' WHERE `id` = 823972408[0m
+  [4;35;1mSQL (0.000358)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.029681)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000256)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001104)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000398)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000323)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000235)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:20:12', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:20:12')[0m
+  [4;35;1mSQL (0.000701)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000113)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001385)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000440)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000276)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000271)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:12', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:12' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000606)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001372)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000521)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000458)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000355)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:12', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:12' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000642)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000362)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000375)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000603)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000314)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000242)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000313)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000696)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000259)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000236)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000234)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:20:39', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:20:39')[0m
+  [4;36;1mPost Exists (0.000313)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972410) LIMIT 1[0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972410) [0m
+  [4;36;1mPost Update (0.000191)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:39', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:39' WHERE `id` = 823972410[0m
+  [4;35;1mSQL (0.000220)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000871)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000259)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001090)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000351)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000309)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000333)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000245)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:20:40', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:20:39')[0m
+  [4;35;1mSQL (0.000635)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000618)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000303)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000321)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000460)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:39', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:40' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.001250)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000641)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000372)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000253)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000241)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:39', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:40' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.001293)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000204)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000183)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000527)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001026)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.001161)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000366)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000369)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000385)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000592)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000243)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000205)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.029511)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:20:53', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:20:53')[0m
+  [4;36;1mPost Exists (0.000651)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972412) LIMIT 1[0m
+  [4;35;1mSQL (0.000396)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972412) [0m
+  [4;36;1mPost Update (0.000293)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:53', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:53' WHERE `id` = 823972412[0m
+  [4;35;1mSQL (0.000343)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000632)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000194)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000921)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000406)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000244)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000250)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:20:53', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:20:53')[0m
+  [4;35;1mSQL (0.000729)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000684)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000327)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000365)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000262)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:53', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:53' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000598)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001180)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.001688)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000612)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000436)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:20:53', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:20:53' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000858)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000195)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000164)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000346)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000638)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000917)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000352)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000236)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000936)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000517)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000177)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000935)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000641)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000687)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000236)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000274)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:22:42', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:22:42')[0m
+  [4;36;1mPost Exists (0.000442)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972414) LIMIT 1[0m
+  [4;35;1mSQL (0.000315)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972414) [0m
+  [4;36;1mPost Update (0.000211)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:22:42', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:22:42' WHERE `id` = 823972414[0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000694)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000638)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000250)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000252)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.040525)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:22:42', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:22:42')[0m
+  [4;35;1mSQL (0.001182)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.002105)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000507)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000380)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000618)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:22:42', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:22:42' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000892)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000956)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000405)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000310)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000259)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:22:42', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:22:42' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.002100)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000597)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000177)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000298)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000673)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000151)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000117)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000629)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.000163)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000631)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000354)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000270)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:23:54', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:23:54' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000674)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000631)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000316)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000280)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:23:54', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:23:54' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000632)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000119)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000184)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000441)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001260)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000462)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000324)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000327)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000625)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000252)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000212)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000286)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:24:22', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:24:22')[0m
+  [4;36;1mPost Exists (0.000343)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972416) LIMIT 1[0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972416) [0m
+  [4;36;1mPost Update (0.000230)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:22', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:22' WHERE `id` = 823972416[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000624)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000615)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000275)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000208)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000241)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000245)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:24:22', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:24:22')[0m
+  [4;35;1mSQL (0.000491)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000624)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000343)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000251)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:22', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:22' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000588)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000637)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000689)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000316)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000275)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:22', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:22' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000876)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000116)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000149)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000604)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000270)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000212)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000236)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000080)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000579)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000247)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000214)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000430)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000313)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:24:35', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:24:35')[0m
+  [4;36;1mPost Exists (0.000705)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972418) LIMIT 1[0m
+  [4;35;1mSQL (0.000328)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972418) [0m
+  [4;36;1mPost Update (0.000381)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:35', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:35' WHERE `id` = 823972418[0m
+  [4;35;1mSQL (0.000580)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.004156)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.003390)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000711)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000312)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000206)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000315)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:24:35', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:24:35')[0m
+  [4;35;1mSQL (0.016646)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000780)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000376)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000271)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:35', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:35' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.328981)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000335)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001053)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000465)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000305)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000333)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:35', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:35' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.033628)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001418)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000164)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000280)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000671)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000306)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000202)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000584)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000246)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000269)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000237)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:24:51', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:24:51')[0m
+  [4;36;1mPost Exists (0.000358)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972420) LIMIT 1[0m
+  [4;35;1mSQL (0.000335)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972420) [0m
+  [4;36;1mPost Update (0.000205)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:51', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:51' WHERE `id` = 823972420[0m
+  [4;35;1mSQL (0.000252)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000736)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000114)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000634)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000252)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000220)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000246)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:24:51', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:24:51')[0m
+  [4;35;1mSQL (0.000588)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000622)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000316)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000244)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:51', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:51' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000681)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000319)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001226)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000453)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000725)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000312)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:24:51', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:24:51' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000633)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000104)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000217)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000444)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001045)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000458)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000229)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000583)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000301)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000215)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000448)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:26:38', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:26:37')[0m
+  [4;36;1mPost Exists (0.000380)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972422) LIMIT 1[0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972422) [0m
+  [4;36;1mPost Update (0.000259)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:26:37', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:26:38' WHERE `id` = 823972422[0m
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000635)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000201)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000684)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000295)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000217)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000220)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000231)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:26:38', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:26:37')[0m
+  [4;35;1mSQL (0.000643)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000812)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.001033)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000384)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:26:37', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:26:38' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000675)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000671)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000363)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000612)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000286)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:26:37', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:26:38' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000798)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000212)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000178)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000419)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001027)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000442)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000312)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000114)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000606)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000276)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000251)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000231)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:26:51', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:26:51')[0m
+  [4;36;1mPost Exists (0.000316)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972424) LIMIT 1[0m
+  [4;35;1mSQL (0.000240)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972424) [0m
+  [4;36;1mPost Update (0.000191)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:26:51', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:26:51' WHERE `id` = 823972424[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mSQL (0.000665)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000350)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001060)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000394)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000294)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000782)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000343)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:26:51', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:26:51')[0m
+  [4;35;1mSQL (0.000730)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000819)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000713)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000391)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000256)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:26:51', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:26:51' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000853)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000630)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000323)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000253)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000233)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:26:51', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:26:51' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000631)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000110)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000591)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000167)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000258)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000617)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000152)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000848)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.000124)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000614)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000356)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000256)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000301)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:27:08', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:27:08' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.001167)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000420)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001264)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000536)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000425)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000246)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:27:08', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:27:08' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000606)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000106)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000167)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000434)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001060)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000247)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000497)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000619)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000254)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000662)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.000180)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000632)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000463)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000313)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000311)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:27:29', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:27:29' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000685)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000622)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000324)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000256)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:27:29', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:27:29' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000568)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001049)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000113)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000175)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000603)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000159)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000109)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000354)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000639)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000160)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000112)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000642)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.000142)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000615)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000351)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000272)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:29:45', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:29:45' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.011644)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000748)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000340)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000291)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000255)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:29:45', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:29:45' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000651)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000106)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000177)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000182)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000494)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001005)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000491)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000334)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '') [0m
+  [4;36;1mSQL (0.000333)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000168)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000233)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mPost Load (0.000618)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000255)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000236)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000215)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.031136)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:29:53', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:29:53')[0m
+  [4;35;1mPost Exists (0.000654)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972426) LIMIT 1[0m
+  [4;36;1mSQL (0.000486)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972426) [0m
+  [4;35;1mPost Update (0.000330)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:29:53', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:29:53' WHERE `id` = 823972426[0m
+  [4;36;1mSQL (0.000337)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000687)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000649)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000295)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo') LIMIT 1[0m
+  [4;35;1mSQL (0.000224)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo') [0m
+  [4;36;1mPost Create (0.000218)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-08 13:29:53', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:29:53')[0m
+  [4;35;1mSQL (0.000620)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000644)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000560)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000248)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:29:53', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:29:53' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000667)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000718)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000321)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000239)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000241)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:29:53', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:29:53' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000612)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000169)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000312)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000640)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000277)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '') [0m
+  [4;36;1mSQL (0.000290)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000221)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000470)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mPost Load (0.000722)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000290)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000208)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000348)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:30:26', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:30:26')[0m
+  [4;35;1mPost Exists (0.000349)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972428) LIMIT 1[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972428) [0m
+  [4;35;1mPost Update (0.000229)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:30:26', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:30:26' WHERE `id` = 823972428[0m
+  [4;36;1mSQL (0.000501)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000639)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001005)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000309)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo') LIMIT 1[0m
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo') [0m
+  [4;36;1mPost Create (0.000256)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-08 13:30:26', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:30:26')[0m
+  [4;35;1mSQL (0.000612)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000677)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000417)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000236)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000932)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:30:26', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:30:26' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000627)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000806)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000342)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000289)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000251)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:30:26', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:30:26' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.029557)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000205)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000253)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000611)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000311)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000238)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '') [0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000126)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;36;1mPost Load (0.000589)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000234)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;36;1mPost Exists (0.000206)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;35;1mSQL (0.000363)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;36;1mPost Create (0.000509)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:31:09', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:31:09')[0m
+  [4;35;1mSQL (0.000588)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000113)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000681)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000268)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo') LIMIT 1[0m
+  [4;35;1mSQL (0.000222)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo') [0m
+  [4;36;1mPost Create (0.000238)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-08 13:31:09', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:31:09')[0m
+  [4;35;1mSQL (0.000585)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001014)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000446)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000419)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000364)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:31:09', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:31:09' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000713)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001312)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000560)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000457)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000375)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:31:09', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:31:09' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000753)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000184)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000190)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000446)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.001053)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000610)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001115)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mSQL (0.000190)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000609)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.000121)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000606)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mSQL (0.000154)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000583)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000606)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.000176)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000156)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000591)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000305)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000259)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '') [0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000239)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001063)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000465)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000238)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000252)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:33:02', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:33:02')[0m
+  [4;36;1mSQL (0.000689)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000112)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000798)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000242)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo') LIMIT 1[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000217)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-08 13:33:02', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:33:02')[0m
+  [4;36;1mSQL (0.000680)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000213)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001033)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mPost Exists (0.000454)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;36;1mSQL (0.000328)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;35;1mPost Update (0.000255)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:33:02', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:33:02' WHERE `id` = 200520904[0m
+  [4;36;1mSQL (0.001161)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000222)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001373)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mPost Exists (0.000613)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;36;1mSQL (0.000886)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;35;1mPost Update (0.000413)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:33:02', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:33:02' WHERE `id` = 200520904[0m
+  [4;36;1mSQL (0.000687)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000175)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001042)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000384)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'jee-whiz') LIMIT 1[0m
+  [4;36;1mSQL (0.000338)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'jee-whiz') [0m
+  [4;35;1mPost Create (0.000376)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-08 13:33:02', 'Jee Whiz', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:33:02')[0m
+  [4;36;1mSQL (0.000741)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001046)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000373)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'jee-whiz') LIMIT 1[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'jee-whiz') [0m
+  [4;35;1mPost Create (0.000253)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-08 13:34:50', 'Jee Whiz', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:34:50')[0m
+  [4;36;1mSQL (0.000629)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000095)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000320)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000601)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000233)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000208)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '') [0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000123)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000609)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000606)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000254)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000253)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:34:50', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:34:50')[0m
+  [4;36;1mSQL (0.000574)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000111)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000648)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000255)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo-bar-_test') LIMIT 1[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo-bar-_test') [0m
+  [4;35;1mPost Create (0.000247)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-_test', '2008-05-08 13:34:50', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:34:50')[0m
+  [4;36;1mSQL (0.000852)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000650)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000668)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo') LIMIT 1[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000243)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-08 13:34:50', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:34:50')[0m
+  [4;36;1mSQL (0.000668)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000096)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000744)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mPost Exists (0.000335)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;36;1mSQL (0.000248)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;35;1mPost Update (0.000238)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:34:50', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:34:50' WHERE `id` = 200520904[0m
+  [4;36;1mSQL (0.000659)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001223)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+  [4;35;1mPost Exists (0.000515)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;36;1mSQL (0.000333)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;35;1mPost Update (0.000496)[0m   [0mUPDATE `posts` SET `created_at` = '2008-05-08 13:34:50', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:34:50' WHERE `id` = 200520904[0m
+  [4;36;1mSQL (0.000638)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000250)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000112)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000642)[0m   [0;1mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPost Exists (0.000312)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'jee-whiz') LIMIT 1[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'jee-whiz') [0m
+  [4;35;1mPost Create (0.000228)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-08 13:35:45', 'Jee Whiz', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:35:45')[0m
+  [4;36;1mSQL (0.000821)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000189)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000300)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mPost Load (0.000606)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000291)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = '') [0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000670)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000384)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft') LIMIT 1[0m
+  [4;35;1mPost Exists (0.000211)[0m   [0mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2') LIMIT 1[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2') [0m
+  [4;35;1mPost Create (0.000231)[0m   [0mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('draft-2', '2008-05-08 13:35:45', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:35:45')[0m
+  [4;36;1mPost Exists (0.000313)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft-2' and id != 823972440) LIMIT 1[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft-2' AND `posts`.id <> 823972440) [0m
+  [4;36;1mPost Update (0.000190)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:35:45', `body` = 'MyText', `title` = 'Draft', `permalink` = 'draft-2', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:35:45' WHERE `id` = 823972440[0m
+  [4;35;1mSQL (0.000572)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000714)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000245)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo-bar-test') LIMIT 1[0m
+  [4;35;1mSQL (0.000240)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo-bar-test') [0m
+  [4;36;1mPost Create (0.000237)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-08 13:35:45', 'Draft', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:35:45')[0m
+  [4;35;1mSQL (0.000552)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000657)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPost Exists (0.000253)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo') LIMIT 1[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo') [0m
+  [4;36;1mPost Create (0.000215)[0m   [0;1mINSERT INTO `posts` (`permalink`, `updated_at`, `title`, `body`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-08 13:35:45', 'foo', 'MyText', 'MyText', NULL, 1, 'draft', '2008-05-08 13:35:45')[0m
+  [4;35;1mSQL (0.000572)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000591)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000310)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'foo' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'foo' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000298)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:35:45', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:35:45' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.034589)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000228)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.001114)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mPost Exists (0.000479)[0m   [0;1mSELECT `posts`.id FROM `posts` WHERE (permalink = 'draft' and id != 200520904) LIMIT 1[0m
+  [4;35;1mSQL (0.000374)[0m   [0mSELECT permalink FROM `posts` WHERE (`posts`.permalink = 'draft' AND `posts`.id <> 200520904) [0m
+  [4;36;1mPost Update (0.000381)[0m   [0;1mUPDATE `posts` SET `created_at` = '2008-05-08 13:35:45', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'draft', `user_id` = 1, `published_at` = NULL, `state` = 'draft', `excerpt` = 'MyText', `updated_at` = '2008-05-08 13:35:45' WHERE `id` = 200520904[0m
+  [4;35;1mSQL (0.000698)[0m   [0mROLLBACK[0m
