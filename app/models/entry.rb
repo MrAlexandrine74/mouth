@@ -19,24 +19,28 @@
 class Entry < ActiveRecord::Base
   belongs_to              :user
   
-  validates_presence_of   :title, :permalink
+  validates_presence_of   :title, :permalink, :body
   validates_uniqueness_of :permalink
   
   alias_attribute         :slug, :permalink
   
   has_permalink           :title
   
+  named_scope :drafts,    :conditions => { :state => "draft" }
+  named_scope :private,   :conditions => { :state => "private" }
+  named_scope :published, :conditions => { :state => "published" }  
+  
   acts_as_state_machine   :initial => :draft  
   state :draft
   state :private
-  state :published
+  state :published, :enter => :do_publish
   
   event :publish do
-    transitions :from => :draft, :to => :published
-    transitions :from => :private, :to => :published
+    transitions :from => :draft,    :to => :published
+    transitions :from => :private,  :to => :published
   end
-  
-  named_scope :drafts,    :conditions => { :state => "draft" }
-  named_scope :private,   :conditions => { :state => "private" }
-  named_scope :published, :conditions => { :state => "published" }
+
+  def do_publish
+    self.published_at = Time.now
+  end
 end

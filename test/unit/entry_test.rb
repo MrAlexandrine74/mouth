@@ -47,7 +47,21 @@ class EntryTest < ActiveSupport::TestCase
       @post.save
       assert @post.permalink != first_post.permalink, "permalink is the same as the first posts permalink"
     end
-
+    
+    def test_should_have_body_present
+      assert_no_difference 'Post.count' do
+        @post = create_post :body => nil
+        assert @post.errors.on(:body)
+      end      
+    end
+    
+    def test_should_update_published_at_when_published
+      @post = create_post
+      assert_nil @post.published_at
+      @post.publish!
+      assert_not_nil @post.published_at
+    end
+    
   private
     def first_post
       @first_post ||= Post.find :first    
@@ -55,7 +69,9 @@ class EntryTest < ActiveSupport::TestCase
 
     def new_post(options = {})
       first_post
+      options[:state] ||= "draft"
       options[:permalink] ||= nil
+      options[:published_at] ||= nil
       Post.new(@first_post.attributes.merge!(options))
     end
 

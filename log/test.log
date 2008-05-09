@@ -47777,3 +47777,1693 @@ Redirected to http://test.host/
 Completed in 0.00615 (162 reqs/sec) | DB: 0.00161 (26%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
   [4;36;1mUser Load (0.001054)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 8) [0m
   [4;35;1mSQL (0.022445)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000233)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002246)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000816)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000343)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000590)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mPost Create (0.000284)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-09 12:20:27', 'Jee Whiz', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:27')[0m
+  [4;35;1mSQL (0.000594)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000505)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.001122)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000410)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000332)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000221)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:20:27', 'Published Post', NULL, 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:27')[0m
+  [4;35;1mSQL (0.000622)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000262)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000744)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000257)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000206)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000215)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:20:27', 'Published Post', 'Once there was', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:27')[0m
+  [4;35;1mSQL (0.000630)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000699)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000253)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000231)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000120)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.066429)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000445)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000227)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000288)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:20:27', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:27')[0m
+  [4;35;1mPost Exists (0.000347)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2' and id != 987560910) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2' AND `entries`.id <> 987560910) [0m
+  [4;35;1mPost Update (0.000197)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:20:27', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'draft', `excerpt` = NULL, `updated_at` = '2008-05-09 12:20:27' WHERE `id` = 987560910[0m
+  [4;36;1mSQL (0.000646)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000704)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000251)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mPost Create (0.000246)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-09 12:20:27', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:27')[0m
+  [4;36;1mSQL (0.000552)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000094)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000729)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000340)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000237)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-09 12:20:27', 'foo', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:27')[0m
+  [4;36;1mSQL (0.028691)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000202)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001236)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000540)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000660)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000350)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:20:27', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:20:27' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000633)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000781)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000557)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000325)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000313)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:20:27', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'published-post', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:20:27' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000599)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000150)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000087)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002215)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000755)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000334)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000221)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mPost Create (0.000239)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-09 12:20:36', 'Jee Whiz', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:36')[0m
+  [4;35;1mSQL (0.000565)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000668)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000355)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000224)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000228)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000122)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000233)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000644)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000279)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000257)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000259)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:20:36', 'Published Post', 'Once there was', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:36')[0m
+  [4;35;1mSQL (0.000593)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000276)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000642)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000241)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000312)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000243)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000117)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000636)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.067144)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000449)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000226)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000267)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:20:36', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:36')[0m
+  [4;35;1mPost Exists (0.000338)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2' and id != 987560915) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2' AND `entries`.id <> 987560915) [0m
+  [4;35;1mPost Update (0.000201)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:20:36', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'draft', `excerpt` = NULL, `updated_at` = '2008-05-09 12:20:36' WHERE `id` = 987560915[0m
+  [4;36;1mSQL (0.000624)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000704)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000301)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mPost Create (0.000371)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-09 12:20:36', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:36')[0m
+  [4;36;1mSQL (0.000537)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000772)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000256)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000373)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-09 12:20:36', 'foo', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:20:36')[0m
+  [4;36;1mSQL (0.031406)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000376)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001363)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000504)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000359)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:20:36', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:20:36' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000648)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000119)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000699)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000348)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000264)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:20:36', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'published-post', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:20:36' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000588)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.003163)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.001113)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000432)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000342)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000285)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Load (0.000640)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000263)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000223)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;35;1mSQL (0.000221)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000112)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000251)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Load (0.000646)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000262)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000233)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;35;1mSQL (0.000116)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000712)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000387)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000344)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000228)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000674)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000251)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000211)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Exists (0.000235)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000226)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000224)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000685)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000332)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mSQL (0.000148)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000659)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000256)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000094)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000651)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000331)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mSQL (0.000118)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000695)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000291)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000713)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.000665)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mSQL (0.000694)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000211)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000222)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('5326e260dd0f8b5dc34ec8cbbb8b03f781324147', '2008-05-09 12:21:23', '1685174e39b98226e5ce6a1c0f05a8f3a2bb1205', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:21:23', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:21:23 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+  [4;35;1mUser Load (0.000782)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+  [4;36;1mSQL (0.000644)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;35;1mUser Create (0.000218)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('5326e260dd0f8b5dc34ec8cbbb8b03f781324147', '2008-05-09 12:21:23', '1685174e39b98226e5ce6a1c0f05a8f3a2bb1205', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:21:23', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:21:23 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+  [4;36;1mSQL (0.000297)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000660)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000850)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000293)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = '2008-05-09 16:21:23', `state` = 'deleted', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000802)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001616)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000475)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin2' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000401)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mUser Update (0.000431)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin2', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:23' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.001031)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin2') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mSQL (0.000757)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000177)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000531)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000327)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000498)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000360)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000270)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('cb828cbab919714bc921748acefaf7179be0a11e', '2008-05-09 12:21:24', 'ead1fdc1452e1e722eb0221fe4b9ea12b3471c81', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:21:24', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:21:24 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: new password
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+  [4;35;1mSQL (0.000696)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000746)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000353)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '17bba52493854eeeef204ba33bd234e3439ddfef', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000618)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001230)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000435)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-16 16:21:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '1a9775aa05c668e1128df7901762ef4ba389dc77', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000701)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001161)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000386)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-16 16:21:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '1a9775aa05c668e1128df7901762ef4ba389dc77', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000857)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000390)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000338)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000333)[0m   [0mSELECT email FROM `users` WHERE (`users`.email IS NULL) [0m
+  [4;36;1mSQL (0.000333)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000126)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mSELECT login FROM `users` WHERE (`users`.login IS NULL) [0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000122)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000327)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000133)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000229)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000205)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000774)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000331)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mUser Update (0.000233)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '4b6dd603c64f03bc2f676658e287094878df9603', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.000697)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mSQL (0.000586)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000543)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000720)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000325)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '17bba52493854eeeef204ba33bd234e3439ddfef', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000783)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000287)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000778)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000315)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000591)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000761)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000274)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '17bba52493854eeeef204ba33bd234e3439ddfef', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000247)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000852)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001288)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000583)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000406)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.001013)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000121)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000708)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000244)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:23', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:24' WHERE `id` = 1[0m
+  [4;36;1mUser Load (0.000681)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mSQL (0.000838)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+Redirected to http://test.host/session/new
+Filter chain halted as [:admin_required] rendered_or_redirected.
+Completed in 0.00039 (2563 reqs/sec) | DB: 0.00032 (81%) | 302 Found [http://test.host/admin/posts]
+  [4;36;1mSQL (0.000187)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000756)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mPost Columns (0.002250)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000280)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"post"=>{"title"=>"New Update"}, "action"=>"create", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000717)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000346)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'new-update') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000232)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'new-update') [0m
+Rendering template within layouts/application
+Rendering admin/posts/new
+Completed in 0.01135 (88 reqs/sec) | Rendering: 0.00323 (28%) | DB: 0.00491 (43%) | 200 OK [http://test.host/admin/posts?post%5Btitle%5D=New+Update]
+  [4;36;1mSQL (0.000366)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000187)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000685)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mSQL (0.000256)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mEntry Load (0.000632)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#destroy (for 0.0.0.0 at 2008-05-09 12:21:27) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;36;1mUser Load (0.000708)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Load (0.000671)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Destroy (0.000188)[0m   [0;1m DELETE FROM `entries`
+ WHERE `id` = 464120533
+[0m
+Redirected to http://test.host/admin/posts
+Completed in 0.00266 (376 reqs/sec) | DB: 0.00381 (143%) | 302 Found [http://test.host/admin/posts/464120533]
+  [4;35;1mSQL (0.000243)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000658)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000680)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mEntry Load (0.000638)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;36;1mUser Load (0.000716)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Load (0.000698)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+Completed in 0.00423 (236 reqs/sec) | Rendering: 0.00209 (49%) | DB: 0.00376 (88%) | 200 OK [http://test.host/admin/posts/464120533/edit]
+  [4;36;1mSQL (0.000195)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000724)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000724)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Load (0.000722)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+Completed in 0.00424 (236 reqs/sec) | Rendering: 0.00189 (44%) | DB: 0.00252 (59%) | 200 OK [http://test.host/admin/posts]
+  [4;35;1mSQL (0.000175)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000695)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+
+
+Processing PostsController#new (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"admin/posts"}
+  [4;36;1mUser Load (0.000678)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/posts/new
+Completed in 0.00252 (397 reqs/sec) | Rendering: 0.00117 (46%) | DB: 0.00167 (66%) | 200 OK [http://test.host/admin/posts/new]
+  [4;35;1mSQL (0.000161)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000684)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mEntry Load (0.000652)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000757)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Load (0.000663)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+Completed in 0.00333 (299 reqs/sec) | Rendering: 0.00108 (32%) | DB: 0.00301 (90%) | 200 OK [http://test.host/admin/posts/464120533]
+  [4;35;1mSQL (0.000149)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000668)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mEntry Load (0.000646)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#update (for 0.0.0.0 at 2008-05-09 12:21:27) [PUT]
+  Session ID: 
+  Parameters: {"post"=>{}, "action"=>"update", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000670)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Load (0.000655)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Exists (0.000320)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000243)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+Completed in 0.00487 (205 reqs/sec) | Rendering: 0.00138 (28%) | DB: 0.00347 (71%) | 200 OK [http://test.host/admin/posts/464120533?]
+  [4;35;1mSQL (0.000179)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Load (0.000875)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+Completed in 0.00691 (144 reqs/sec) | Rendering: 0.00364 (52%) | DB: 0.00117 (16%) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.000155)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000246)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Load (0.000748)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"464120533", "controller"=>"posts"}
+  [4;35;1mPost Load (0.000737)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mUser Load (0.000750)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 0.00515 (194 reqs/sec) | Rendering: 0.00288 (55%) | DB: 0.00264 (51%) | 200 OK [http://test.host/posts/464120533]
+  [4;35;1mSQL (0.000151)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000711)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000730)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000232)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `email` = 'quentin@example.com', `state` = 'active', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00432 (231 reqs/sec) | DB: 0.00192 (44%) | 302 Found [http://test.host/logout]
+  [4;36;1mSQL (0.000135)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000183)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000665)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000259)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:27', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00282 (355 reqs/sec) | Rendering: 0.00272 (96%) | DB: 0.00124 (44%) | 200 OK [http://test.host/login]
+  [4;36;1mUser Load (0.000740)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'invalid_auth_token') LIMIT 1[0m
+  [4;35;1mSQL (0.000689)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000699)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000281)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:27', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000220)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-09 12:16:27', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00130 (766 reqs/sec) | Rendering: 0.00122 (93%) | DB: 0.00281 (215%) | 200 OK [http://test.host/login]
+  [4;36;1mUser Load (0.000758)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c') LIMIT 1[0m
+  [4;35;1mSQL (0.027896)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"bad password"}
+  [4;35;1mUser Load (0.001841)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00462 (216 reqs/sec) | Rendering: 0.00194 (41%) | DB: 0.03071 (664%) | 200 OK [http://test.host/session?login=quentin&password=bad+password]
+  [4;36;1mSQL (0.000331)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000514)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+  [4;36;1mUser Load (0.001382)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00230 (434 reqs/sec) | DB: 0.00223 (96%) | 302 Found [http://test.host/session?login=quentin&password=test]
+  [4;35;1mSQL (0.000141)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000719)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000302)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:27', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00125 (798 reqs/sec) | Rendering: 0.00116 (92%) | DB: 0.00128 (102%) | 200 OK [http://test.host/login]
+  [4;35;1mUser Load (0.000743)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c') LIMIT 1[0m
+Cookie set: auth_token=638247e71209e8dc62eeda2adbd80364371fe43c; path=/; expires=Fri, 23 May 2008 20:21:27 GMT
+  [4;36;1mSQL (0.000660)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000117)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000736)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-05-09 12:21:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.000692)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.000216)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `email` = 'quentin@example.com', `state` = 'active', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00219 (455 reqs/sec) | DB: 0.00316 (144%) | 302 Found [http://test.host/logout]
+  [4;35;1mSQL (0.000136)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+  [4;35;1mUser Load (0.000764)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00136 (735 reqs/sec) | DB: 0.00106 (78%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+  [4;36;1mSQL (0.000138)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000163)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+  [4;36;1mUser Load (0.000711)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Update (0.000314)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:21:26', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:21:27', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '638247e71209e8dc62eeda2adbd80364371fe43c', `deleted_at` = NULL, `email` = 'quentin@example.com', `state` = 'active', `updated_at` = '2008-05-09 12:21:27' WHERE `id` = 1[0m
+Cookie set: auth_token=638247e71209e8dc62eeda2adbd80364371fe43c; path=/; expires=Fri, 23 May 2008 16:21:27 GMT
+Redirected to http://test.host/
+Completed in 0.00277 (361 reqs/sec) | DB: 0.00133 (47%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+  [4;36;1mSQL (0.000638)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000374)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000359)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;35;1mUser Create (0.000240)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('c7a7526df1c90c65f318190eb8de497ab20cc68b', '2008-05-09 12:21:27', '832703c0eba5efb3abff18f56df7cbbcdba42647', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:21:27', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:21:27 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+Redirected to http://test.host/
+Completed in 0.03602 (27 reqs/sec) | DB: 0.00211 (5%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000394)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000659)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>nil}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000294)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000222)[0m   [0mSELECT email FROM `users` WHERE (`users`.email IS NULL) [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00527 (189 reqs/sec) | Rendering: 0.00349 (66%) | DB: 0.00192 (36%) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000361)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000134)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000229)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>nil, "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000297)[0m   [0;1mSELECT login FROM `users` WHERE (`users`.login IS NULL) [0m
+  [4;35;1mSQL (0.000222)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00324 (309 reqs/sec) | Rendering: 0.00157 (48%) | DB: 0.00134 (41%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000309)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000211)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00311 (321 reqs/sec) | Rendering: 0.00155 (49%) | DB: 0.00127 (40%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000133)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000239)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>nil, "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000285)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00313 (319 reqs/sec) | Rendering: 0.00154 (49%) | DB: 0.00135 (43%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000145)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:21:27) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000306)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000261)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;35;1mUser Create (0.000230)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('c7a7526df1c90c65f318190eb8de497ab20cc68b', '2008-05-09 12:21:27', '832703c0eba5efb3abff18f56df7cbbcdba42647', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:21:27', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:21:27 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+Redirected to http://test.host/
+Completed in 0.00545 (183 reqs/sec) | DB: 0.00133 (24%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mUser Load (0.000751)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 8) [0m
+  [4;35;1mSQL (0.000628)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002181)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000773)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000284)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000236)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Load (0.000695)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000325)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000241)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;35;1mSQL (0.000239)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Load (0.000803)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000301)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000244)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;35;1mSQL (0.000133)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000254)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000649)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000322)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000224)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000682)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000324)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000249)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000210)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Exists (0.000900)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000990)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000735)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000315)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000242)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000666)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000235)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000206)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000080)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000686)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000326)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mSQL (0.000133)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000673)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000348)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000221)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002578)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000811)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000300)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000098)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Load (0.000694)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000262)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000218)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;35;1mSQL (0.000231)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Load (0.000691)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000268)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000231)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;35;1mSQL (0.000111)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000690)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000307)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000252)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000659)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000282)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000225)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000210)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Exists (0.000516)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000339)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000681)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000289)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mSQL (0.000119)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000664)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000243)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000206)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000667)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000328)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mSQL (0.000120)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Load (0.000801)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000363)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000284)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000194)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.003470)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.001126)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.001623)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000414)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mPost Create (0.000265)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-09 12:26:25', 'Jee Whiz', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:26:25')[0m
+  [4;35;1mSQL (0.000860)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000599)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.001027)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000424)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000287)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000252)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000675)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000318)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000241)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000656)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000253)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000218)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000231)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:26:25', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:26:25')[0m
+  [4;35;1mPost Exists (0.000329)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2' and id != 987560903) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2' AND `entries`.id <> 987560903) [0m
+  [4;35;1mPost Update (0.000206)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:26:25', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'draft', `excerpt` = NULL, `updated_at` = '2008-05-09 12:26:25' WHERE `id` = 987560903[0m
+  [4;36;1mSQL (0.000673)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000173)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000818)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000511)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mPost Create (0.000269)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-09 12:26:25', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:26:25')[0m
+  [4;36;1mSQL (0.000661)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000708)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000241)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000218)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-09 12:26:25', 'foo', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:26:25')[0m
+  [4;36;1mSQL (0.000626)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000121)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000829)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000354)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000256)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:26:25', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:26:25' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000667)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000724)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000309)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000235)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:26:25', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'published-post', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:26:25' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000670)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000370)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001254)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000401)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000336)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000325)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000247)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:26:25', 'Published Post', 'MyText', 'Post', NULL, '2008-05-05 13:59:01', 1, 'draft', '2008-05-09 12:26:25')[0m
+  [4;35;1mSQL (0.000621)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002299)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000752)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000329)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000265)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mPost Create (0.000229)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-09 12:27:24', 'Jee Whiz', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:24')[0m
+  [4;35;1mSQL (0.000581)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000385)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000666)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000276)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000220)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000205)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000125)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000233)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000655)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000255)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000727)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000402)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000253)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000224)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:27:24', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:24')[0m
+  [4;35;1mPost Exists (0.000317)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2' and id != 987560903) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2' AND `entries`.id <> 987560903) [0m
+  [4;35;1mPost Update (0.000224)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:24', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = NULL, `type` = 'Post', `state` = 'draft', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 987560903[0m
+  [4;36;1mSQL (0.000636)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000253)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000674)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000238)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mPost Create (0.000208)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-09 12:27:24', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:24')[0m
+  [4;36;1mSQL (0.000575)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000657)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000230)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000197)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-09 12:27:24', 'foo', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:24')[0m
+  [4;36;1mSQL (0.000548)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000658)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000307)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000243)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000246)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:24', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000576)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000695)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000298)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000226)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:24', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'published-post', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.028381)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000198)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001267)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000391)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000394)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000324)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000240)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:27:24', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:24')[0m
+  [4;35;1mPost Update (0.000256)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:24', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = NULL, `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 987560906[0m
+  [4;36;1mSQL (0.000647)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000098)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000712)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.000651)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000219)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000217)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('ee8098eca884633fca7557b0e3da148ac2706502', '2008-05-09 12:27:24', '77495548f318b4364038bead50e13136b1f3c157', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:27:24', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:27:24 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+  [4;35;1mUser Load (0.000755)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+  [4;36;1mSQL (0.000612)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000282)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;35;1mUser Create (0.000226)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('ee8098eca884633fca7557b0e3da148ac2706502', '2008-05-09 12:27:24', '77495548f318b4364038bead50e13136b1f3c157', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:27:24', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:27:24 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+  [4;36;1mSQL (0.000308)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000609)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000692)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000294)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = '2008-05-09 16:27:24', `state` = 'deleted', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000676)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001285)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000891)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin2' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000336)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mUser Update (0.000274)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin2', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.000671)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin2') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mSQL (0.001003)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000119)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000210)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000349)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000317)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000239)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('ee8098eca884633fca7557b0e3da148ac2706502', '2008-05-09 12:27:24', 'a03b506cf015eb72ed3af6cd536041b65ffa387e', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:27:24', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:27:24 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: new password
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+  [4;35;1mSQL (0.000624)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000776)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000350)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '3c47b935815fa7e5589a2290140204f6627d1fbd', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000621)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000279)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001726)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000436)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-16 16:27:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '87e009e4358aa4acf87a464e3159af83db2fa469', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000996)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000368)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001096)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000346)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-16 16:27:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '87e009e4358aa4acf87a464e3159af83db2fa469', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000654)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000379)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000381)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000323)[0m   [0mSELECT email FROM `users` WHERE (`users`.email IS NULL) [0m
+  [4;36;1mSQL (0.000353)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000193)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000383)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000334)[0m   [0;1mSELECT login FROM `users` WHERE (`users`.login IS NULL) [0m
+  [4;35;1mSQL (0.000359)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000157)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000111)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000439)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000142)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000715)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mUser Update (0.000252)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '4b6dd603c64f03bc2f676658e287094878df9603', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.000697)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mSQL (0.000597)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000807)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000283)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '3c47b935815fa7e5589a2290140204f6627d1fbd', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000644)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000726)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000259)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000598)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000683)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000283)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:24', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '3c47b935815fa7e5589a2290140204f6627d1fbd', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000329)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000834)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000688)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000241)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000247)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000704)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000185)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000740)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000265)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:24', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:24' WHERE `id` = 1[0m
+  [4;36;1mUser Load (0.000646)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mSQL (0.000635)[0m   [0mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2008-05-09 12:27:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+Redirected to http://test.host/session/new
+Filter chain halted as [:admin_required] rendered_or_redirected.
+Completed in 0.00037 (2732 reqs/sec) | DB: 0.00032 (86%) | 302 Found [http://test.host/admin/posts]
+  [4;36;1mSQL (0.000210)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000241)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000742)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mPost Columns (0.002199)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000275)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2008-05-09 12:27:27) [POST]
+  Session ID: 
+  Parameters: {"post"=>{"title"=>"New Update"}, "action"=>"create", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000713)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000542)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'new-update') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000233)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'new-update') [0m
+Rendering template within layouts/application
+Rendering admin/posts/new
+Completed in 0.01196 (83 reqs/sec) | Rendering: 0.00339 (28%) | DB: 0.00516 (43%) | 200 OK [http://test.host/admin/posts?post%5Btitle%5D=New+Update]
+  [4;36;1mSQL (0.000363)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000144)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000693)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mSQL (0.000261)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mEntry Load (0.000639)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#destroy (for 0.0.0.0 at 2008-05-09 12:27:27) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;36;1mUser Load (0.000675)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Load (0.000666)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Destroy (0.000230)[0m   [0;1m DELETE FROM `entries`
+ WHERE `id` = 464120533
+[0m
+Redirected to http://test.host/admin/posts
+Completed in 0.00264 (379 reqs/sec) | DB: 0.00378 (143%) | 302 Found [http://test.host/admin/posts/464120533]
+  [4;35;1mSQL (0.000254)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000659)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000100)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000676)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mEntry Load (0.000650)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2008-05-09 12:27:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;36;1mUser Load (0.000666)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Load (0.000682)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+Completed in 0.00427 (234 reqs/sec) | Rendering: 0.00225 (52%) | DB: 0.00369 (86%) | 200 OK [http://test.host/admin/posts/464120533/edit]
+  [4;36;1mSQL (0.000188)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000266)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000709)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2008-05-09 12:27:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000661)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Load (0.000706)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+Completed in 0.00413 (242 reqs/sec) | Rendering: 0.00191 (46%) | DB: 0.00253 (61%) | 200 OK [http://test.host/admin/posts]
+  [4;35;1mSQL (0.000156)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000688)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+
+
+Processing PostsController#new (for 0.0.0.0 at 2008-05-09 12:27:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"admin/posts"}
+  [4;36;1mUser Load (0.000679)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/posts/new
+Completed in 0.00268 (372 reqs/sec) | Rendering: 0.00134 (50%) | DB: 0.00166 (62%) | 200 OK [http://test.host/admin/posts/new]
+  [4;35;1mSQL (0.000163)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000805)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mEntry Load (0.000666)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2008-05-09 12:27:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000677)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Load (0.000671)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+Completed in 0.00331 (302 reqs/sec) | Rendering: 0.00112 (33%) | DB: 0.00319 (96%) | 200 OK [http://test.host/admin/posts/464120533]
+  [4;35;1mSQL (0.000156)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000712)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mEntry Load (0.000644)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#update (for 0.0.0.0 at 2008-05-09 12:27:27) [PUT]
+  Session ID: 
+  Parameters: {"post"=>{}, "action"=>"update", "id"=>"464120533", "controller"=>"admin/posts"}
+  [4;35;1mUser Load (0.000677)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Load (0.000675)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPost Exists (0.000318)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000198)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:27', `title` = 'Published Post', `body` = 'MyText', `permalink` = 'published-post', `published_at` = '2008-05-05 13:59:01', `user_id` = 1, `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:27' WHERE `id` = 464120533[0m
+Redirected to http://test.host/posts/464120533
+Completed in 0.00453 (220 reqs/sec) | DB: 0.00381 (84%) | 302 Found [http://test.host/admin/posts/464120533?]
+  [4;36;1mSQL (0.000181)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2008-05-09 12:27:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Load (0.000933)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+Completed in 0.07488 (13 reqs/sec) | Rendering: 0.00523 (6%) | DB: 0.00121 (1%) | 200 OK [http://test.host/posts]
+  [4;35;1mSQL (0.000436)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Load (0.000770)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2008-05-09 12:27:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"464120533", "controller"=>"posts"}
+  [4;36;1mPost Load (0.000752)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 464120533) AND (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mUser Load (0.000725)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 0.00505 (198 reqs/sec) | Rendering: 0.00280 (55%) | DB: 0.00280 (55%) | 200 OK [http://test.host/posts/464120533]
+  [4;36;1mSQL (0.000137)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000701)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-05-09 12:27:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.000724)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.000250)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `email` = 'quentin@example.com', `state` = 'active', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00427 (234 reqs/sec) | DB: 0.00191 (44%) | 302 Found [http://test.host/logout]
+  [4;35;1mSQL (0.000656)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000734)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000276)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:28', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-05-09 12:27:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00280 (357 reqs/sec) | Rendering: 0.00271 (96%) | DB: 0.00185 (66%) | 200 OK [http://test.host/login]
+  [4;35;1mUser Load (0.000722)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'invalid_auth_token') LIMIT 1[0m
+  [4;36;1mSQL (0.016845)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000194)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001245)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000424)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:28', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000316)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-09 12:22:28', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-05-09 12:27:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00186 (537 reqs/sec) | Rendering: 0.00173 (93%) | DB: 0.01975 (1060%) | 200 OK [http://test.host/login]
+  [4;35;1mUser Load (0.000874)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f') LIMIT 1[0m
+  [4;36;1mSQL (0.000671)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"bad password"}
+  [4;36;1mUser Load (0.000746)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00248 (404 reqs/sec) | Rendering: 0.00121 (48%) | DB: 0.00243 (98%) | 200 OK [http://test.host/session?login=quentin&password=bad+password]
+  [4;35;1mSQL (0.000147)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+  [4;35;1mUser Load (0.000729)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00129 (774 reqs/sec) | DB: 0.00099 (77%) | 302 Found [http://test.host/session?login=quentin&password=test]
+  [4;36;1mSQL (0.000128)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000096)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000685)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000297)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:28', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-05-09 12:27:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00124 (803 reqs/sec) | Rendering: 0.00115 (92%) | DB: 0.00121 (96%) | 200 OK [http://test.host/login]
+  [4;36;1mUser Load (0.000834)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f') LIMIT 1[0m
+Cookie set: auth_token=188fe7a1dcceaef6430ffb8c2d1dd060b387e34f; path=/; expires=Fri, 23 May 2008 20:27:28 GMT
+  [4;35;1mSQL (0.000622)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001554)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-05-09 12:27:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000833)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000266)[0m   [0mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `email` = 'quentin@example.com', `state` = 'active', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00256 (390 reqs/sec) | DB: 0.00424 (165%) | 302 Found [http://test.host/logout]
+  [4;36;1mSQL (0.000598)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000187)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+  [4;36;1mUser Load (0.000775)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00143 (701 reqs/sec) | DB: 0.00156 (109%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+  [4;35;1mSQL (0.000582)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+  [4;35;1mUser Load (0.000847)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'quentin') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Update (0.000295)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-05-04 12:27:27', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `remember_token_expires_at` = '2008-05-23 16:27:28', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '188fe7a1dcceaef6430ffb8c2d1dd060b387e34f', `deleted_at` = NULL, `email` = 'quentin@example.com', `state` = 'active', `updated_at` = '2008-05-09 12:27:28' WHERE `id` = 1[0m
+Cookie set: auth_token=188fe7a1dcceaef6430ffb8c2d1dd060b387e34f; path=/; expires=Fri, 23 May 2008 16:27:28 GMT
+Redirected to http://test.host/
+Completed in 0.00294 (340 reqs/sec) | DB: 0.00187 (63%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+  [4;35;1mSQL (0.000714)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000309)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000213)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000232)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('105e97826302610b7a63074e0f16027405429ae2', '2008-05-09 12:27:28', 'cb316c182c645cd99b1332e4db807a7d2d5ea2ed', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:27:28', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:27:28 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+Redirected to http://test.host/
+Completed in 0.03635 (27 reqs/sec) | DB: 0.00183 (5%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000379)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000652)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000268)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>nil}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000286)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mSELECT email FROM `users` WHERE (`users`.email IS NULL) [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00484 (206 reqs/sec) | Rendering: 0.00327 (67%) | DB: 0.00203 (41%) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000312)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000109)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000429)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>nil, "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000332)[0m   [0mSELECT login FROM `users` WHERE (`users`.login IS NULL) [0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00434 (230 reqs/sec) | Rendering: 0.00162 (37%) | DB: 0.00152 (35%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000272)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00305 (327 reqs/sec) | Rendering: 0.00152 (49%) | DB: 0.00125 (40%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.000265)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>nil, "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000260)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00316 (316 reqs/sec) | Rendering: 0.00157 (49%) | DB: 0.00125 (39%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-05-09 12:27:28) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000219)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('105e97826302610b7a63074e0f16027405429ae2', '2008-05-09 12:27:28', 'cb316c182c645cd99b1332e4db807a7d2d5ea2ed', NULL, NULL, NULL, 'quire', 'quire@example.com', '2008-05-09 12:27:28', 'pending')[0m
+Sent mail to quire@example.com
+
+Date: Fri, 9 May 2008 12:27:28 -0400
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Your account has been created!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/
+Redirected to http://test.host/
+Completed in 0.00524 (190 reqs/sec) | DB: 0.00125 (23%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mUser Load (0.000736)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 8) [0m
+  [4;36;1mSQL (0.000506)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002088)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000734)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000390)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000220)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mPost Create (0.000235)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-09 12:27:37', 'Jee Whiz', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:37')[0m
+  [4;35;1mSQL (0.001085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000503)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.002227)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000451)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000262)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000289)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000684)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000307)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000100)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000708)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000292)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000281)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000210)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000514)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:27:37', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:37')[0m
+  [4;35;1mPost Exists (0.000370)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2' and id != 987560908) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2' AND `entries`.id <> 987560908) [0m
+  [4;35;1mPost Update (0.000228)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:37', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = NULL, `type` = 'Post', `state` = 'draft', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:37' WHERE `id` = 987560908[0m
+  [4;36;1mSQL (0.000663)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001155)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000432)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000257)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mPost Create (0.000247)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-09 12:27:38', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:37')[0m
+  [4;36;1mSQL (0.000736)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000702)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000277)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000227)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-09 12:27:38', 'foo', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:37')[0m
+  [4;36;1mSQL (0.000725)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000223)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001210)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000610)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000488)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000417)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:37', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:38' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.027763)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000243)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001301)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000474)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000401)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:37', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'published-post', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:38' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000845)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000188)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001824)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000679)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000550)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000441)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000356)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:27:38', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:37')[0m
+  [4;35;1mPost Update (0.000418)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:37', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = NULL, `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:38' WHERE `id` = 987560911[0m
+  [4;36;1mSQL (0.000672)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000098)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.002428)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPost Load (0.000723)[0m   [0mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;36;1mPost Exists (0.000327)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'jee-whiz') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'jee-whiz') [0m
+  [4;36;1mPost Create (0.000275)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('jee-whiz', '2008-05-09 12:27:50', 'Jee Whiz', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:50')[0m
+  [4;35;1mSQL (0.000610)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000279)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000684)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000330)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000335)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mSQL (0.000126)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mPost Load (0.000633)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000256)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = '') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = '') [0m
+  [4;35;1mSQL (0.000239)[0m   [0mSELECT count(*) AS count_all FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000691)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000252)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000245)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000251)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:27:50', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:50')[0m
+  [4;35;1mPost Exists (0.000332)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2' and id != 987560913) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2' AND `entries`.id <> 987560913) [0m
+  [4;35;1mPost Update (0.000196)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:50', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = NULL, `type` = 'Post', `state` = 'draft', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:50' WHERE `id` = 987560913[0m
+  [4;36;1mSQL (0.000602)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000096)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000663)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000490)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo-bar-test') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo-bar-test') [0m
+  [4;35;1mPost Create (0.000245)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo-bar-test', '2008-05-09 12:27:51', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:50')[0m
+  [4;36;1mSQL (0.000609)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000100)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000752)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000275)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mPost Create (0.000239)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-05-09 12:27:51', 'foo', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:50')[0m
+  [4;36;1mSQL (0.000554)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000098)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000732)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000316)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000322)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:50', `body` = 'MyText', `title` = 'Foo', `permalink` = 'foo', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:51' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.031580)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000645)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.001148)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mPost Exists (0.000487)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post' and id != 464120533) AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mSQL (0.000691)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post' AND `entries`.id <> 464120533) [0m
+  [4;35;1mPost Update (0.000295)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:50', `body` = 'MyText', `title` = 'Foo Bar', `permalink` = 'published-post', `user_id` = 1, `published_at` = '2008-05-05 13:59:01', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:51' WHERE `id` = 464120533[0m
+  [4;36;1mSQL (0.000636)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mPost Load (0.000729)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type, id
+  [4;35;1mPost Exists (0.000292)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;36;1mPost Exists (0.000297)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'published-post-2') AND ( (`entries`.`type` = 'Post' ) ) LIMIT 1[0m
+  [4;35;1mSQL (0.000280)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'published-post-2') [0m
+  [4;36;1mPost Create (0.000241)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('published-post-2', '2008-05-09 12:27:51', 'Published Post', 'MyText', 'Post', NULL, NULL, 1, 'draft', '2008-05-09 12:27:50')[0m
+  [4;35;1mPost Update (0.000286)[0m   [0mUPDATE `entries` SET `created_at` = '2008-05-09 12:27:50', `body` = 'MyText', `title` = 'Published Post', `permalink` = 'published-post-2', `user_id` = 1, `published_at` = '2008-05-09 12:27:51', `type` = 'Post', `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-05-09 12:27:51' WHERE `id` = 987560916[0m
+  [4;36;1mSQL (0.000681)[0m   [0;1mROLLBACK[0m
