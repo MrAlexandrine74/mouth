@@ -48,6 +48,10 @@ module ActsAsPreferenced
       end
       pref
     end
+    
+    def set_preference_unless_already_set(name, value=nil, obj=self)
+      set_preference(name) unless get_preference(name, obj).nil?
+    end
   
     # Returns selected preference value
     def get_preference(name, obj=self)
