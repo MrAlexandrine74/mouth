@@ -21,7 +21,7 @@ class Admin::PostsControllerTest < ActionController::TestCase
   def test_should_create_post
     be_logged_in_and_admin
     assert_difference('Post.count') do
-      post :create, :post => { }
+      post :create, :post => { :title => "New Update" }
     end
 
     assert_redirected_to admin_post_path(assigns(:post))
@@ -29,26 +29,26 @@ class Admin::PostsControllerTest < ActionController::TestCase
 
   def test_should_show_post
     be_logged_in_and_admin
-    get :show, :id => posts(:published).id
+    get :show, :id => entries(:published_post).id
     assert_response :success
   end
   
   def test_should_get_edit
     be_logged_in_and_admin
-    get :edit, :id => posts(:published).id
+    get :edit, :id => entries(:published_post).id
     assert_response :success
   end
   
   def test_should_update_post
     be_logged_in_and_admin
-    put :update, :id => posts(:published).id, :post => { }
+    put :update, :id => entries(:published_post).id, :post => { }
     assert_redirected_to admin_post_path(assigns(:post))
   end
   
   def test_should_destroy_post
     be_logged_in_and_admin
     assert_difference('Post.count', -1) do
-      delete :destroy, :id => posts(:published).id
+      delete :destroy, :id => entries(:published_post).id
     end
   
     assert_redirected_to admin_posts_path

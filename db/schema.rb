@@ -9,9 +9,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080505135911) do
+ActiveRecord::Schema.define(:version => 20080508133737) do
 
-  create_table "posts", :force => true do |t|
+  create_table "entries", :force => true do |t|
     t.string   "permalink"
     t.string   "title"
     t.text     "excerpt"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20080505135911) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "type"
   end
 
   create_table "users", :force => true do |t|

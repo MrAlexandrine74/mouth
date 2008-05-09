@@ -23,9 +23,9 @@ module PermalinkFu
   def self.included(base)
     base.extend ClassMethods
     class << base
-      attr_accessor :permalink_options
-      attr_accessor :permalink_attributes
-      attr_accessor :permalink_field
+      cattr_accessor :permalink_options
+      cattr_accessor :permalink_attributes
+      cattr_accessor :permalink_field
     end
   end
   

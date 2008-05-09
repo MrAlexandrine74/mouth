@@ -11,7 +11,7 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   def test_should_show_post
-    get :show, :id => posts(:published).id
+    get :show, :id => entries(:published_post).id
     assert_response :success
   end
 end
