@@ -4304,3 +4304,10 @@ WARNING: You're using the Ruby-based MySQL library that ships with Rails. This l
   [4;36;1mSQL (0.009104)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080508133737')[0m
   [4;35;1mSQL (0.008681)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
   [4;36;1mSQL (0.003545)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000176)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000356)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mEntry Columns (0.013303)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPage Columns (0.002817)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Columns (0.002153)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mUser Columns (0.002067)[0m   [0mSHOW FIELDS FROM `users`[0m
