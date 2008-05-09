@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080508133737) do
+ActiveRecord::Schema.define(:version => 20080509183734) do
 
   create_table "entries", :force => true do |t|
     t.string   "permalink"
@@ -22,6 +22,22 @@ ActiveRecord::Schema.define(:version => 20080508133737) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "type"
+  end
+
+  create_table "preferences", :force => true do |t|
+    t.integer "preferrer_id",                                  :null => false
+    t.string  "preferrer_type", :limit => 128, :default => "", :null => false
+    t.integer "preferred_id"
+    t.string  "preferred_type",                :default => "", :null => false
+    t.string  "name",           :limit => 128, :default => "", :null => false
+    t.text    "value"
+  end
+
+  create_table "sites", :force => true do |t|
+    t.string   "permalink"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

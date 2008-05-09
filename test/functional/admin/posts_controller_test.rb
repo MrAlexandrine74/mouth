@@ -21,7 +21,7 @@ class Admin::PostsControllerTest < ActionController::TestCase
   def test_should_create_post
     be_logged_in_and_admin
     assert_difference('Post.count') do
-      post :create, :post => { :title => "New Update" }
+      post :create, :post => { :title => "New Update", :body => "OMFG! Look.... an update!" }
     end
 
     assert_redirected_to admin_post_path(assigns(:post))

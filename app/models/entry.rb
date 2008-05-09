@@ -22,8 +22,6 @@ class Entry < ActiveRecord::Base
   validates_presence_of   :title, :permalink, :body
   validates_uniqueness_of :permalink
   
-  alias_attribute         :slug, :permalink
-  
   has_permalink           :title
   
   named_scope :drafts,    :conditions => { :state => "draft" }

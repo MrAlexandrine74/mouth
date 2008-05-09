@@ -18,7 +18,7 @@
 
 require 'digest/sha1'
 class User < ActiveRecord::Base
-  has_many :posts
+  has_many      :posts
   
   # Virtual attribute for the unencrypted password
   attr_accessor :password
@@ -36,6 +36,7 @@ class User < ActiveRecord::Base
   
   attr_accessible           :login, :email, :password, :password_confirmation
 
+  acts_as_preferenced
   acts_as_state_machine :initial => :pending
   state :passive
   state :pending

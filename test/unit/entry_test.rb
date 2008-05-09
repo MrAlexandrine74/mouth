@@ -32,13 +32,13 @@ class EntryTest < ActiveSupport::TestCase
       assert @post.permalink == "foo", "permalink is not 'foo', it is '#{@post.permalink}'"
     end
 
-    def test_should_dasherize_slug_if_title_has_spaces
+    def test_should_dasherize_permalink_if_title_has_spaces
       @post = create_post(:title => "Jee Whiz")
       assert @post.permalink == "jee-whiz"
     end
 
-    def test_should_ignore_special_characters_in_slugs
-      @post = create_post(:slug => "foo-bar$%^&test")
+    def test_should_ignore_special_characters_in_permalinks
+      @post = create_post(:permalink => "foo-bar$%^&test")
       assert @post.permalink == "foo-bar-test", "permalink is '#{@post.permalink}'"
     end
 
