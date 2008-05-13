@@ -32,10 +32,22 @@ class Preference < ActiveRecord::Base
     else
       pref = Preference.create( { :name => name, :value => value }.merge(global_preference) )
     end
-    pref    
+    pref.value unless pref.nil?
   end
   
-  def self.get(name)
-    Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
+  def self.set_unless_exists(name, value)
+    self.get(name).nil? ? self.set(name, value) : self.get(name)
+  end
+  
+  def self.get(name, reload=false)
+    global_name = name.underscore.downcase
+    eval ("
+    if reload == false
+      @#{global_name} ||= Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
+    else
+      @#{global_name} = Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
+    end
+    @#{global_name}.value unless @#{global_name}.nil?
+    ")
   end
 end

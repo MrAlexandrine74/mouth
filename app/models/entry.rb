@@ -28,7 +28,7 @@ class Entry < ActiveRecord::Base
   named_scope :private,   :conditions => { :state => "private" }
   named_scope :published, :conditions => { :state => "published" }  
   
-  acts_as_state_machine   :initial => :draft  
+  acts_as_state_machine   :initial => :draft
   state :draft
   state :private
   state :published, :enter => :do_publish

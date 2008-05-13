@@ -3,8 +3,6 @@ require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
 
 class Test::Unit::TestCase
-  # Be sure to include AuthenticatedTestHelper in test/test_helper.rb instead
-  # Then, you can remove it from this and the units test.
   include AuthenticatedTestHelper
   
   # Transactional fixtures accelerate your tests by wrapping each test method
@@ -37,8 +35,11 @@ class Test::Unit::TestCase
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
   fixtures :all
+end
 
-  # Add more helper methods to be used by all tests here...
+alias_method_chain :setup,    :bootstrap
+def setup_with_bootstrap
+  system ("rake db:bootstrap")
 end
 
 def be_logged_in
