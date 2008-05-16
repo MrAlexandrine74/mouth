@@ -6335,3 +6335,37 @@ WARNING: You're using the Ruby-based MySQL library that ships with Rails. This l
   [4;36;1mSQL (0.000690)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
   [4;35;1mSQL (0.000638)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
   [4;36;1mSQL (0.000637)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080508133737')[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000458)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000315)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000444)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000411)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011948)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.002986)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.001220)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.002417)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+  [4;35;1mSQL (0.002536)[0m   [0mdescribe `preferences`[0m
+  [4;36;1mSQL (0.001180)[0m   [0;1mSHOW KEYS FROM `preferences`[0m
+  [4;35;1mSQL (0.002810)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002667)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001298)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.130503)[0m   [0mDROP DATABASE IF EXISTS `mouth_test`[0m
+  [4;36;1mSQL (0.000652)[0m   [0;1mCREATE DATABASE `mouth_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000152)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'entries': DROP TABLE `entries`[0m
+  [4;35;1mSQL (0.028079)[0m   [0mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `permalink` varchar(255) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `excerpt` text DEFAULT NULL, `body` text DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `published_at` datetime DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `type` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'preferences': DROP TABLE `preferences`[0m
+  [4;35;1mSQL (0.002859)[0m   [0mCREATE TABLE `preferences` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `preferrer_id` int(11) NOT NULL, `preferrer_type` varchar(128) DEFAULT '' NOT NULL, `preferred_id` int(11) DEFAULT NULL, `preferred_type` varchar(255) DEFAULT '' NOT NULL, `name` varchar(128) DEFAULT '' NOT NULL, `value` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;35;1mSQL (0.002301)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000666)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002724)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006475)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000696)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000588)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000663)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080509164356')[0m
+  [4;36;1mSQL (0.000658)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
+  [4;35;1mSQL (0.000635)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
+  [4;36;1mSQL (0.000719)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080508133737')[0m
