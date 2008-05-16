@@ -8,7 +8,7 @@
 #  title        :string(255)     
 #  excerpt      :text            
 #  body         :text            
-#  state        :string(255)     default("passive")
+#  state        :string(255)     default("draft")
 #  published_at :datetime        
 #  user_id      :integer(11)     
 #  created_at   :datetime        
