@@ -35,12 +35,8 @@ class Preference < ActiveRecord::Base
     pref.value unless pref.nil?
   end
   
-  def self.set_unless_exists(name, value)
-    self.get(name).nil? ? self.set(name, value) : self.get(name)
-  end
-  
   def self.get(name, reload=false)
-    global_name = name.underscore.downcase
+    global_name = name.to_s.underscore.downcase # this isn't working
     eval ("
     if reload == false
       @#{global_name} ||= Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))

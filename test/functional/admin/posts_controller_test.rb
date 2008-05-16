@@ -1,4 +1,5 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../../test_helper'
+
 class Admin::PostsControllerTest < ActionController::TestCase
   def test_needs_to_be_logged_in
     get :index

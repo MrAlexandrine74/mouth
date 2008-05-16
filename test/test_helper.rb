@@ -37,11 +37,6 @@ class Test::Unit::TestCase
   fixtures :all
 end
 
-alias_method_chain :setup,    :bootstrap
-def setup_with_bootstrap
-  system ("rake db:bootstrap")
-end
-
 def be_logged_in
   login_as :quentin
 end
