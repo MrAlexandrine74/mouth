@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def index
-    @posts = Post.find :all
+    @posts = Post.published
     # todo: published
 
     respond_to do |format|
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
-    @post = Post.published.find(params[:id])
+    @post = Post.published.find_by_permalink(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

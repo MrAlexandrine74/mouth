@@ -1,23 +1,10 @@
-%p
-  %strong Permalink
-  = @post.permalink
-%p
-  %strong Title:
-  = @post.title
-%p
-  %strong Excerpt:
-  = @post.excerpt
-%p
-  %strong Body:
-  = @post.body
-%p
-  %strong State:
-  = @post.state
-%p
-  %strong Published at:
-  = @post.published_at
-%p
-  %strong User:
-  = @post.user
-
-= "#{link_to 'Edit', edit_post_path(@post)} | #{link_to 'Back', posts_path}"
+#post
+  %p= link_to @post, post_path(@post)
+  - if User.more_than_one?
+    %p= "By #{link_to(@post.user, user_path(@post.user))}"
+  %p= "On #{@post.published_at.pretty_print}"
+  %p= textilize @post.body
+  - if logged_in? and current_user == @post.user
+    %ul.post_actions
+      %li= link_to 'Edit', edit_post_path(@post)
+      %li= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete

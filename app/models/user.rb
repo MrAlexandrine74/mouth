@@ -33,7 +33,10 @@ class User < ActiveRecord::Base
   validates_uniqueness_of   :login, :email, :case_sensitive => false
 
   before_save               :encrypt_password
-  
+
+  alias_attribute           :to_s,      :login
+  alias_attribute           :to_param,  :login
+
   attr_accessible           :login, :email, :password, :password_confirmation
 
   acts_as_preferenced
@@ -79,6 +82,10 @@ class User < ActiveRecord::Base
     Digest::SHA1.hexdigest("--#{salt}--#{password}--")
   end
 
+  def self.more_than_one?
+    User.count > 0
+  end
+
   # Encrypts the password with the user salt
   def encrypt(password)
     self.class.encrypt(password, salt)
@@ -118,19 +125,19 @@ class User < ActiveRecord::Base
     @activated
   end
 
-  protected
-    # before filter 
-    def encrypt_password
-      return if password.blank?
-      self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
-      self.crypted_password = encrypt(password)
-    end
-      
-    def password_required?
-      crypted_password.blank? || !password.blank?
-    end
+protected
+  # before filter 
+  def encrypt_password
+    return if password.blank?
+    self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
+    self.crypted_password = encrypt(password)
+  end
     
-    def do_delete
-      self.deleted_at = Time.now.utc
-    end
+  def password_required?
+    crypted_password.blank? || !password.blank?
+  end
+  
+  def do_delete
+    self.deleted_at = Time.now.utc
+  end
 end

@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem
+  include DateTimeExtensions
   
   helper :all # include all helpers, all the time
  

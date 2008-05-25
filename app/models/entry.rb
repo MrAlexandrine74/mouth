@@ -23,11 +23,15 @@ class Entry < ActiveRecord::Base
   validates_presence_of   :permalink, :if => Proc.new { |entry| entry.should_permalink? }
   validates_uniqueness_of :permalink
   
+  alias_attribute         :to_s,      :title
+  alias_attribute         :to_param,  :permalink
+  
   has_permalink           :title #, :if => Proc.new { |entry| entry.should_permalink? }
   
   named_scope :drafts,    :conditions => { :state => "draft" }
   named_scope :private,   :conditions => { :state => "private" }
   named_scope :published, :conditions => { :state => "published" }  
+  named_scope :from_permalink, lambda { |permalink| { :conditions => ['permalink = ?', permalink] } }
   
   acts_as_state_machine   :initial => :draft
   state :draft
@@ -46,4 +50,5 @@ class Entry < ActiveRecord::Base
   def do_publish
     self.published_at = Time.now
   end
+  
 end
