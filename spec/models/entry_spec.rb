@@ -28,15 +28,19 @@ describe Entry do
     #   entry = create_draft_entry
     #   entry.permalink.should be_nil
     # end
+    
+    it "should not have a published_at datetime stamp" do
+      @entry.published_at.should be_nil
+    end
   end
   
   # describe 'as private post'
   
   describe 'as published' do
-      before(:each) do
-        @entry = create_published_entry        
-      end
-  
+    before(:each) do
+      @entry = create_published_entry        
+    end
+    
     it 'creates permalink if does not exist' do
       entry = create_published_entry(:title => 'foo')
       entry.permalink.should == 'foo'
@@ -67,10 +71,22 @@ describe Entry do
       }.should_not change { @entry.permalink }
     end
     
-    it 'should update published at when changed from draft to published'
+    it 'should update published_at attribute when changed from draft to published' do
+      @entry.published_at.should_not be_nil
+    end
     
-    it 'should update published at if exists when changed status from draft to published'
-    it 'should not update published at if exists on save'    
+    it 'should not update published at if exists on save' do
+      lambda {
+        @entry.update_attribute('title', 'this is a new post')
+      }.should_not change { @entry.published_at }
+    end
+  
+    it 'should update published at if exists when changed status from draft to published' do
+      @entry.update_attribute('state', 'draft')
+      lambda {
+        @entry.publish!
+      }.should change { @entry.published_at }
+    end
   end
   
 end
