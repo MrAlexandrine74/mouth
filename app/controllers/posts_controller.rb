@@ -2,7 +2,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def index
-    @posts = Post.published
+    @posts = Post.find :all
+    # todo: published
 
     respond_to do |format|
       format.html # index.html.erb
