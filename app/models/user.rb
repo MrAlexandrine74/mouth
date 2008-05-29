@@ -73,8 +73,12 @@ class User < ActiveRecord::Base
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
-    u = find_in_state :first, :active, :conditions => {:login => login} # need to get the salt
+    u = find :first, :conditions => {:login => login, :state => User.accepted_login_states} # need to get the salt
     u && u.authenticated?(password) ? u : nil
+  end
+  
+  def self.accepted_login_states
+    %w(admin active)
   end
 
   # Encrypts some data with the salt.

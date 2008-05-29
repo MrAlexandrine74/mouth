@@ -31,7 +31,6 @@ class Entry < ActiveRecord::Base
   named_scope :drafts,    :conditions => { :state => "draft" }
   named_scope :private,   :conditions => { :state => "private" }
   named_scope :published, :conditions => { :state => "published" }  
-  named_scope :from_permalink, lambda { |permalink| { :conditions => ['permalink = ?', permalink] } }
   
   acts_as_state_machine   :initial => :draft
   state :draft

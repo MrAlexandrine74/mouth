@@ -12,7 +12,7 @@ describe SessionsController do
     session[:user_id].should_not be_nil
     response.should be_redirect
   end
-  
+
   it 'fails login and does not redirect' do
     post :create, :login => 'quentin', :password => 'bad password'
     session[:user_id].should be_nil

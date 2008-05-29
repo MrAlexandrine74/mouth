@@ -2,6 +2,18 @@
 
 - form_for([:admin, @post]) do |make|
   = make.error_messages
-  %p= make.submit "Create"
+  %p
+    = make.label      :permalink
+    = make.text_field :permalink
+  %p
+    = make.label      :title
+    = make.text_field :title
+  %p
+    = make.label      :excerpt
+    = make.text_area  :excerpt
+  %p
+    = make.label      :body
+    = make.text_area  :body
+  %p= make.submit     "Create"
   
 %p= link_to "Back", admin_posts_path
