@@ -1,19 +1,27 @@
-%h2 New post
+%h2 New Post
+%h3 Another
 
-- form_for([:admin, @post]) do |make|
+- form_for(@post, :url => admin_post_path(@post.id)) do |make|
   = make.error_messages
   %p
-    = make.label      :permalink
-    = make.text_field :permalink
+    = make.label        :permalink
+    = make.text_field   :permalink
+  %p                    
+    = make.label        :title
+    = make.text_field   :title
+  %p                    
+    = make.label        :excerpt
+    = make.text_area    :excerpt
+  %p                    
+    = make.label        :body
+    = make.text_area    :body
   %p
-    = make.label      :title
-    = make.text_field :title
-  %p
-    = make.label      :excerpt
-    = make.text_area  :excerpt
-  %p
-    = make.label      :body
-    = make.text_area  :body
+    = make.label :state_draft, "Draft"
+    = make.radio_button :state, :draft
+    = make.label :state_private, "Private"
+    = make.radio_button :state, :private
+    = make.label :state_published, "Published"
+    = make.radio_button :state, :published
   %p= make.submit     "Create"
   
 %p= link_to "Back", admin_posts_path

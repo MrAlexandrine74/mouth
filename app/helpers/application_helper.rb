@@ -3,4 +3,8 @@ module ApplicationHelper
   def page_title
     @page_title.nil? ? pref('site_name') : "#{pref('site_name')} &raquo; #{@page_title}"
   end
+  
+  def mini_page_title
+    @page_title || pref('site_name')
+  end
 end

@@ -24,7 +24,7 @@ class Entry < ActiveRecord::Base
   validates_uniqueness_of :permalink
   
   alias_attribute         :to_s,      :title
-  alias_attribute         :to_param,  :permalink
+  alias_attribute         :to_param,  :permalink # to_param is only for the front-end, admin should specify id explicitly
   
   has_permalink           :title #, :if => Proc.new { |entry| entry.should_permalink? }
   

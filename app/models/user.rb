@@ -71,12 +71,14 @@ class User < ActiveRecord::Base
     transitions :from => :suspended, :to => :passive
   end
 
-  # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
+  # Authenticates a user by their login name and unencrypted password. Also expects the user to be in certain states.
+  # Returns the user or nil.
   def self.authenticate(login, password)
     u = find :first, :conditions => {:login => login, :state => User.accepted_login_states} # need to get the salt
     u && u.authenticated?(password) ? u : nil
   end
-  
+
+  # Accepted user#states for logging in.
   def self.accepted_login_states
     %w(admin active)
   end
@@ -88,6 +90,11 @@ class User < ActiveRecord::Base
 
   def self.more_than_one?
     User.count > 0
+  end
+
+  # Check to see whether the user's current state is admin.
+  def is_admin?
+    self.state == "admin"
   end
 
   # Encrypts the password with the user salt
@@ -122,11 +129,6 @@ class User < ActiveRecord::Base
     self.remember_token_expires_at = nil
     self.remember_token            = nil
     save(false)
-  end
-
-  # Returns true if the user has just been activated.
-  def recently_activated?
-    @activated
   end
 
 protected

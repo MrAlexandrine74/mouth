@@ -62,7 +62,7 @@ class Admin::PostsController < AdminController
     respond_to do |format|
       if @post.update_attributes(params[:post])
         flash[:notice] = 'Post was successfully updated.'
-        format.html { redirect_to(@post) }
+        format.html { redirect_to admin_post_path(@post.id) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

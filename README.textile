@@ -3,4 +3,6 @@ h1. Mouth
 An open-source Rails blogging engine.
 
 h3. Credits
+
 * "Zach Inglis":http://zachinglis.com
+* "Kyle Neath":http://warpspire.com - For the awesome inspiration on the admin and willingness to share.

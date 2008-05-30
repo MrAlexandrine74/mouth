@@ -2,6 +2,7 @@
 %html
   %head
     %title= page_title
+    = stylesheet_link_tag 'reset'
   %body
     %p{:color => "green"}= flash[:notice]
     = yield
