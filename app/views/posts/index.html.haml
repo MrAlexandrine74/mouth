@@ -1,16 +1,19 @@
 %ul
-  - @posts.each do |post|
-    %li
-      %p= link_to post, post_path(post)
-      - if User.more_than_one?
-        %p= "By #{link_to post.user, user_path(post.user)}"
-      %p= "On #{post.published_at.pretty_print}"
-      %p
-        - unless post.excerpt.nil?
-          = textilize post.body
-        - else
-          = textilize post.excerpt
-      - if logged_in? and current_user == post.user
-        %ul.list_actions
-          %li= link_to 'Edit', edit_post_path(post)
-          %li= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+  - if @posts.empty?
+    There are no posts yet.
+  - else
+    - @posts.each do |post|
+      %li
+        %p= link_to post, post_path(post)
+        - if User.more_than_one?
+          %p= "By #{link_to post.user, user_path(post.user)}"
+        %p= "On #{post.published_at.pretty_print}"
+        %p
+          - unless post.excerpt.nil?
+            = textilize post.body
+          - else
+            = textilize post.excerpt
+        - if logged_in? and current_user == post.user
+          %ul.list_actions
+            %li= link_to 'Edit', edit_post_path(post)
+            %li= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete

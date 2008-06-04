@@ -14083,3 +14083,399 @@ WARNING: You're using the Ruby-based MySQL library that ships with Rails. This l
   [4;36;1mSQL (0.000678)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080504154944')[0m
   [4;35;1mSQL (0.000776)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20080505135911')[0m
   [4;36;1mSQL (0.000779)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20080508133737')[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 10:57:20) [GET]
+  Session ID: 2bc5a258eb55bf1a9e5ea77ad258013f
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000185)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (0.002618)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.000841)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPreference Load (0.000767)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`preferrer_id` = 1 AND `preferences`.`name` = 'site_name' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002096)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.11351 (8 reqs/sec) | Rendering: 0.09653 (85%) | DB: 0.00651 (5%) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 10:57:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--7e2308d163712a0de782d98e035f557357dfad13
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (0.002515)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.000758)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPreference Load (0.000741)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`preferrer_id` = 1 AND `preferences`.`name` = 'site_name' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002305)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.02473 (40 reqs/sec) | Rendering: 0.00880 (35%) | DB: 0.00632 (25%) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 10:57:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--7e2308d163712a0de782d98e035f557357dfad13
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (0.013410)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.001191)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPreference Load (0.001100)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.003338)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.10619 (9 reqs/sec) | Rendering: 0.07597 (71%) | DB: 0.01922 (18%) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 10:58:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--7e2308d163712a0de782d98e035f557357dfad13
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (0.013867)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.001206)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`state` = 'published') AND ( (`entries`.`type` = 'Post' ) ) [0m
+  [4;35;1mPreference Load (0.001049)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002777)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.04531 (22 reqs/sec) | Rendering: 0.01482 (32%) | DB: 0.01890 (41%) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 10:58:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--7e2308d163712a0de782d98e035f557357dfad13
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+Redirected to http://localhost:3333/session/new
+Filter chain halted as [:admin_required] rendered_or_redirected.
+Completed in 0.00059 (1698 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/admin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-05-30 10:58:31) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvIgsvYWRtaW4%3D--4ef61132f2acca4ecc99045aa485df3badfdb908
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mPreference Load (0.001010)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002820)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.04080 (24 reqs/sec) | Rendering: 0.03496 (85%) | DB: 0.00383 (9%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-05-30 10:58:37) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA6DnJldHVybl90byILL2FkbWlu--e10d31a631d1c3062847b94b415722f2c35af066
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4a0ae62a148beb02ccc646bce1296aa038b94286", "action"=>"create", "controller"=>"sessions", "password"=>"test", "login"=>"superman"}
+  [4;35;1mUser Load (0.000999)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'superman' AND `users`.`state` IN ('admin','active')) LIMIT 1[0m
+  [4;36;1mUser Columns (0.002274)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3333/admin
+Completed in 0.00873 (114 reqs/sec) | DB: 0.00327 (37%) | 302 Found [http://localhost/session]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 10:58:38) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDk6DHVzZXJfaWRpCCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBpbiBzdWNjZXNzZnVs%0AbHkGOgpAdXNlZHsGOwhUOg5yZXR1cm5fdG8w--2c9494db8cad2842ab57a22afe89e513f1a833f8
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+  [4;35;1mUser Columns (0.002521)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001646)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Columns (0.002369)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.001071)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/index
+  [4;35;1mPreference Load (0.000798)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.001925)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.03848 (25 reqs/sec) | Rendering: 0.01191 (30%) | DB: 0.01033 (26%) | 200 OK [http://localhost/admin]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 11:03:15) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA6DHVzZXJfaWRpCDoOcmV0dXJuX3RvMA%3D%3D--d0ee03b4ca6b0852445514899f7d35cced223173
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+  [4;35;1mUser Columns (0.013500)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002443)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Columns (0.002397)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.001098)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/index
+  [4;35;1mPreference Load (0.000742)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002405)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.04935 (20 reqs/sec) | Rendering: 0.00878 (17%) | DB: 0.02259 (45%) | 200 OK [http://localhost/admin]
+  [4;35;1mEntry Columns (0.012919)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000251)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000506)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink IS NULL) [0m
+  [4;36;1mEntry Create (0.000416)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES(NULL, '2008-05-30 11:10:39', 'Foo bar', 'foo bar', NULL, NULL, NULL, NULL, 'draft', '2008-05-30 11:10:39')[0m
+  [4;35;1mSQL (0.009809)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001379)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560906) [0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-05-30 11:14:53) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDk6DHVzZXJfaWRpCCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA%3D%3D--379f77dd1b6e3e69b1c8a8b380c1b634b67a4520
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mPreference Load (0.000807)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.012402)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.02470 (40 reqs/sec) | Rendering: 0.00945 (38%) | DB: 0.01321 (53%) | 200 OK [http://localhost/session/new]
+  [4;35;1mUser Load (0.000854)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Columns (0.012858)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001034)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000443)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000274)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000610)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink IS NULL) [0m
+  [4;35;1mSQL (0.000106)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.001193)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000176)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000466)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000375)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000324)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink IS NULL) [0m
+  [4;35;1mSQL (0.000193)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.000939)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000869)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000396)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink IS NULL) [0m
+  [4;35;1mSQL (0.000372)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000769)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Create (0.000262)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES(NULL, '2008-05-30 11:17:55', 'Foo!Bar', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, '2008-05-30 11:17:55', 1, 'draft', '2008-05-30 11:17:55')[0m
+  [4;36;1mSQL (0.009690)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001218)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560907) [0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2008-05-30 11:24:33) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA6DHVzZXJfaWRpCDoOcmV0dXJuX3RvMA%3D%3D--d0ee03b4ca6b0852445514899f7d35cced223173
+  Parameters: {"action"=>"new", "controller"=>"admin/posts"}
+  [4;35;1mUser Columns (0.013969)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001201)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Columns (0.003311)[0m   [0mSHOW FIELDS FROM `entries`[0m
+Rendering template within layouts/admin
+Rendering admin/posts/new
+  [4;36;1mPreference Load (0.001123)[0m   [0;1mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;35;1mPreference Columns (0.002777)[0m   [0mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.06299 (15 reqs/sec) | Rendering: 0.01971 (31%) | DB: 0.02238 (35%) | 200 OK [http://localhost/admin/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2008-05-30 11:24:34) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDk6DHVzZXJfaWRpCCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA%3D%3D--379f77dd1b6e3e69b1c8a8b380c1b634b67a4520
+  Parameters: {"action"=>"new", "controller"=>"admin/posts"}
+  [4;36;1mUser Columns (0.013314)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001365)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mPost Columns (0.002535)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+Rendering template within layouts/admin
+Rendering admin/posts/new
+  [4;35;1mPreference Load (0.000807)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002041)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.04840 (20 reqs/sec) | Rendering: 0.01129 (23%) | DB: 0.02006 (41%) | 200 OK [http://localhost/admin/posts/new]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-05-30 11:24:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMzQ2YWVhYjZiNWQ3MjRjOTNlYjE2MjU1MWMxYTNi%0AZDkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA6DHVzZXJfaWRpCDoOcmV0dXJuX3RvMA%3D%3D--d0ee03b4ca6b0852445514899f7d35cced223173
+  Parameters: {"action"=>"index", "controller"=>"admin/posts"}
+  [4;35;1mUser Columns (0.011838)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001738)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mPost Columns (0.002775)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPost Load (0.001842)[0m   [0;1mSELECT * FROM `entries` WHERE ( (`entries`.`type` = 'Post' ) ) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/index
+  [4;35;1mPreference Load (0.000986)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.`name` = 'site_name' AND `preferences`.`preferrer_id` = 1 AND `preferences`.`preferred_type` = 'global' AND `preferences`.`preferrer_type` = 'global' AND `preferences`.`preferred_id` = 1) LIMIT 1[0m
+  [4;36;1mPreference Columns (0.002086)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+Completed in 0.04835 (20 reqs/sec) | Rendering: 0.01023 (21%) | DB: 0.02126 (43%) | 200 OK [http://localhost/admin]
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000160)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.046701)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mEntry Columns (0.004285)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mUser Columns (0.003010)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.001856)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.001158)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000485)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;35;1mSQL (0.000219)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.000915)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000302)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'foo' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.001303)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000247)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'foo') [0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000091)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Create (0.000255)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('foo', '2008-06-01 12:24:00', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, '2008-06-01 12:24:00', 1, 'draft', '2008-06-01 12:24:00')[0m
+  [4;35;1mSQL (0.009723)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001325)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`permalink` = 'foo') [0m
+  [4;35;1mEntry Load (0.001403)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`permalink` = 'foo') [0m
+  [4;36;1mEntry Load (0.001559)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`permalink` = 'foo') [0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000178)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.000781)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mEntry Columns (0.012716)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mUser Columns (0.002954)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000439)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000529)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000389)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000346)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy') [0m
+  [4;35;1mEntry Create (0.000274)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy', '2008-06-01 14:15:08', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:15:08')[0m
+  [4;36;1mSQL (0.000545)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000770)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.024446)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000473)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000549)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.001783)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.001877)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-2') [0m
+  [4;36;1mEntry Create (0.002302)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy-2', '2008-06-01 14:15:08', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:15:08')[0m
+  [4;35;1mSQL (0.000887)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.028954)[0m   [0mUPDATE `entries` SET `created_at` = '2008-06-01 14:15:08', `body` = 'My secret domination plans are to randomly poison sausages.', `title` = 'Secret World Domination Plans', `permalink` = 'permy-2', `user_id` = 1, `published_at` = '2008-06-01 14:15:08', `type` = NULL, `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-06-01 14:15:08' WHERE `id` = 987560910[0m
+  [4;36;1mSQL (0.000771)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.001266)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000316)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000302)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000360)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-2') [0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Create (0.000259)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy-2', '2008-06-01 14:15:23', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, '2008-06-01 14:15:23', 1, 'draft', '2008-06-01 14:15:23')[0m
+  [4;35;1mSQL (0.000586)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.000830)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000445)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000667)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000731)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000617)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-3' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000664)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.001083)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000353)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-3') [0m
+  [4;36;1mEntry Create (0.000358)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy-3', '2008-06-01 14:15:28', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:15:28')[0m
+  [4;35;1mSQL (0.000453)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000518)[0m   [0mUPDATE `entries` SET `created_at` = '2008-06-01 14:15:28', `body` = 'My secret domination plans are to randomly poison sausages.', `title` = 'Secret World Domination Plans', `permalink` = 'permy-3', `user_id` = 1, `published_at` = '2008-06-01 14:15:28', `type` = NULL, `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-06-01 14:15:28' WHERE `id` = 987560912[0m
+  [4;36;1mSQL (0.042271)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.001230)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000444)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000264)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000240)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-3' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000263)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-3') [0m
+  [4;35;1mSQL (0.000111)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.001179)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000419)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000256)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000226)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-3' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000308)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000254)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-3') [0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.001029)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000370)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000519)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000461)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000422)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-3' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000524)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000431)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000438)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-3') [0m
+  [4;35;1mSQL (0.000173)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Delete all (0.010242)[0m   [0;1mDELETE FROM `entries` [0m
+  [4;35;1mUser Load (0.001164)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000400)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000409)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000351)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy') [0m
+  [4;35;1mEntry Create (0.000303)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy', '2008-06-01 14:17:07', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:17:07')[0m
+  [4;36;1mSQL (0.009767)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000900)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000480)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000538)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000447)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000561)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000647)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000628)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-2') [0m
+  [4;36;1mEntry Create (0.000509)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy-2', '2008-06-01 14:17:26', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:17:26')[0m
+  [4;35;1mSQL (0.010013)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.001147)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000178)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000364)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000271)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-2' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000227)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'permy-3' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000322)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000248)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'permy-3') [0m
+  [4;36;1mEntry Create (0.000244)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('permy-3', '2008-06-01 14:17:38', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:17:38')[0m
+  [4;35;1mSQL (0.009778)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000256)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000475)[0m   [0mUPDATE `entries` SET `created_at` = '2008-06-01 14:17:38', `body` = 'My secret domination plans are to randomly poison sausages.', `title` = 'Secret World Domination Plans', `permalink` = 'permy-3', `user_id` = 1, `published_at` = '2008-06-01 14:17:38', `type` = NULL, `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-06-01 14:17:38' WHERE `id` = 987560915[0m
+  [4;36;1mSQL (0.000819)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000976)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mEntry Columns (0.004314)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mUser Columns (0.004859)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000539)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000757)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000846)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000290)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'secret-world-domination-plans') [0m
+  [4;35;1mEntry Create (0.000302)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('secret-world-domination-plans', '2008-06-01 14:20:02', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:20:02')[0m
+  [4;36;1mSQL (0.033202)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Exists (0.000942)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and id != 987560916 and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000470)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.001063)[0m   [0mUPDATE `entries` SET `created_at` = '2008-06-01 14:20:02', `body` = 'My secret domination plans are to randomly poison sausages.', `title` = 'Secret World Domination Plans', `permalink` = 'secret-world-domination-plans', `user_id` = 1, `published_at` = '2008-06-01 14:20:08', `type` = NULL, `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-06-01 14:20:08' WHERE `id` = 987560916[0m
+  [4;36;1mSQL (0.009724)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001361)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560916) [0m
+  [4;36;1mUser Load (0.001184)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000305)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000312)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000241)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'secret-world-domination-plans') [0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Exists (0.000554)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000581)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Create (0.000272)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('secret-world-domination-plans', '2008-06-01 14:20:19', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, '2008-06-01 14:20:19', 1, 'draft', '2008-06-01 14:20:19')[0m
+  [4;36;1mSQL (0.009738)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001168)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560917) [0m
+  [4;36;1mUser Load (0.001232)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000177)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000429)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000351)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-2' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000428)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'secret-world-domination-plans-2') [0m
+  [4;35;1mEntry Create (0.000240)[0m   [0mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('secret-world-domination-plans-2', '2008-06-01 14:20:26', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:20:26')[0m
+  [4;36;1mSQL (0.009716)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001249)[0m   [0mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560918) [0m
+  [4;36;1mUser Load (0.001207)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000178)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000441)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000240)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-2' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000249)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-3' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000312)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'secret-world-domination-plans-3') [0m
+  [4;36;1mEntry Create (0.000242)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('secret-world-domination-plans-3', '2008-06-01 14:20:33', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, NULL, 1, 'draft', '2008-06-01 14:20:33')[0m
+  [4;35;1mSQL (0.009770)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Exists (0.000816)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-3' and id != 987560919 and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000773)[0m   [0;1mUPDATE `entries` SET `created_at` = '2008-06-01 14:20:33', `body` = 'My secret domination plans are to randomly poison sausages.', `title` = 'Secret World Domination Plans', `permalink` = 'secret-world-domination-plans-3', `user_id` = 1, `published_at` = '2008-06-01 14:20:43', `type` = NULL, `state` = 'published', `excerpt` = NULL, `updated_at` = '2008-06-01 14:20:43' WHERE `id` = 987560919[0m
+  [4;35;1mSQL (0.009847)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001426)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560919) [0m
+  [4;35;1mUser Load (0.000881)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mEntry Columns (0.002886)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mUser Columns (0.002176)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.001272)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Exists (0.000600)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000249)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-2' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000226)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-3' and state = 'draft') LIMIT 1[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'secret-world-domination-plans-3') [0m
+  [4;35;1mSQL (0.000096)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.001186)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mEntry Columns (0.013719)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.002959)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.000185)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Exists (0.000381)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans' and state = 'draft') LIMIT 1[0m
+  [4;35;1mEntry Exists (0.000307)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-2' and state = 'draft') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.000239)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-3' and state = 'draft') LIMIT 1[0m
+  [4;35;1mSQL (0.000401)[0m   [0mSELECT login FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000334)[0m   [0;1mSELECT email FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT permalink FROM `entries` WHERE (`entries`.permalink = 'secret-world-domination-plans-3') [0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Exists (0.000485)[0m   [0mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-3' and state = 'published') LIMIT 1[0m
+  [4;36;1mEntry Exists (0.005448)[0m   [0;1mSELECT `entries`.id FROM `entries` WHERE (permalink = 'secret-world-domination-plans-3-2' and state = 'published') LIMIT 1[0m
+  [4;35;1mSQL (0.000250)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Create (0.000280)[0m   [0;1mINSERT INTO `entries` (`permalink`, `updated_at`, `title`, `body`, `type`, `excerpt`, `published_at`, `user_id`, `state`, `created_at`) VALUES('secret-world-domination-plans-3-2', '2008-06-01 14:21:41', 'Secret World Domination Plans', 'My secret domination plans are to randomly poison sausages.', NULL, NULL, '2008-06-01 14:21:41', 1, 'draft', '2008-06-01 14:21:41')[0m
+  [4;35;1mSQL (0.131675)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.000842)[0m   [0;1mSELECT * FROM `entries` WHERE (`entries`.`id` = 987560920) [0m

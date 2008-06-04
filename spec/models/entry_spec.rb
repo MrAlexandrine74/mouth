@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe Entry do
+describe Entry do  
   describe 'as draft' do
     before(:each) do
       @entry = create_draft_entry
@@ -24,69 +24,79 @@ describe Entry do
       end.should_not change(Entry, :count)
     end
     
-    it "does not create a permalink" #do
-    #   entry = create_draft_entry
-    #   entry.permalink.should be_nil
-    # end
-    
     it "should not have a published_at datetime stamp" do
       @entry.published_at.should be_nil
     end
   end
-  
+
   # describe 'as private post'
-  
+
   describe 'as published' do
     before(:each) do
-      @entry = create_published_entry        
+      @entry = create_published_entry
+      @entry.should_not be_new_record
     end
-    
+
     it 'creates permalink if does not exist' do
       entry = create_published_entry(:title => 'foo')
-      entry.permalink.should == 'foo'
+      entry.published?.should be_true
+      entry.permalink.should eql('foo')
     end
     
     it 'creates a permalink if blank on save' do
-      @entry.update_attribute('permalink', '')
-      @entry.permalink.should_not be_nil
-    end
-    
-    it 'dasherizes permalink on a title with no spaces' do
-      @entry.permalink.should == 'secret-world-domination-plans'      
-    end
-    
-    it 'should ignore special characters in permalinks' do
-      entry = create_published_entry(:title => "Foo!Bar")
-      entry.permalink.should == "foo-bar"
-    end
-    
-    it 'should have a unique permalink' do
-      second_entry = create_published_entry(@entry.attributes)
-      second_entry.permalink.should_not eql(@entry.attributes)
-    end    
-    
-    it 'should not update permalink if title is changed' do
-      lambda {
-        @entry.update_attribute('title', 'Nothing to see here')      
-      }.should_not change { @entry.permalink }
-    end
-    
-    it 'should update published_at attribute when changed from draft to published' do
-      @entry.published_at.should_not be_nil
-    end
-    
-    it 'should not update published at if exists on save' do
-      lambda {
-        @entry.update_attribute('title', 'this is a new post')
-      }.should_not change { @entry.published_at }
-    end
-  
-    it 'should update published at if exists when changed status from draft to published' do
-      @entry.update_attribute('state', 'draft')
-      lambda {
-        @entry.publish!
-      }.should change { @entry.published_at }
-    end
+       @entry.update_attribute('permalink', '')
+       @entry.permalink.should_not be_nil
+     end
+     
+     it 'dasherizes permalink on a title with no spaces' do
+       @entry.permalink.should == 'secret-world-domination-plans'      
+     end
+     
+     it 'should ignore special characters in permalinks' do
+       entry = create_published_entry(:title => "Foo!Bar")
+       entry.permalink.should == "foo-bar"
+     end
+     
+     it 'should have a unique permalink' do
+       second_entry = create_published_entry(@entry.attributes)
+       second_entry.permalink.should_not eql(@entry.attributes)
+     end    
+     
+     it 'should not update permalink if title is changed' do
+       lambda {
+         @entry.update_attribute('title', 'Nothing to see here')      
+       }.should_not change { @entry.permalink }
+     end
+     
+     it 'should update published_at attribute when changed from draft to published' do
+       @entry.published_at.should_not be_nil
+     end
+     
+     it 'should not update published at if exists on save' do
+       lambda {
+         @entry.update_attribute('title', 'this is a new post')
+       }.should_not change { @entry.published_at }
+     end
+      
+     it 'should update published at if exists when changed status from draft to published' do
+       @entry.update_attribute('state', 'draft')
+       lambda {
+         @entry.publish!
+       }.should change { @entry.published_at }
+     end
+
+     it "should not allow duplicate permalinks" do
+       draft = create_draft_entry         :permalink => "permy"
+       published = create_published_entry :permalink => "permy"
+       draft.permalink.should_not eql(published.permalink)
+     end
+     
+     it "should allow publshed permalink to take presidence" do
+       draft = create_draft_entry         :permalink => "permy"
+       entry = create_published_entry     :permalink => "permy"
+       pending "Damnit specs!"
+       entry.permalink.should eql('permy')
+     end
   end
   
 end
@@ -98,7 +108,7 @@ def create_draft_entry(options = {})
 end
 
 def create_published_entry(options = {})
-  entry = create_draft_entry(options)  
+  entry = create_draft_entry(options)
   entry.publish!
   entry
 end

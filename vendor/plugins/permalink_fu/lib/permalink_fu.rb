@@ -3,7 +3,7 @@ begin
 rescue Object
   puts "no iconv, you might want to look into it."
 end
-
+ 
 require 'digest/sha1'
 module PermalinkFu
   class << self
@@ -89,11 +89,11 @@ protected
       send("#{self.class.permalink_field}=", conditions[1])
     end
   end
-
+ 
   def create_permalink_for(attr_names)
     attr_names.collect { |attr_name| send(attr_name).to_s } * " "
   end
-
+ 
 private
   def should_create_permalink?
     if self.class.permalink_options[:if]
@@ -104,7 +104,7 @@ private
       true
     end
   end
-
+ 
   def evaluate_method(method)
     case method
     when Symbol
@@ -116,7 +116,7 @@ private
     end
   end
 end
-
+ 
 if Object.const_defined?(:Iconv)
   PermalinkFu.translation_to   = 'ascii//translit//IGNORE'
   PermalinkFu.translation_from = 'utf-8'
