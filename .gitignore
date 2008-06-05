@@ -2,5 +2,3 @@ config/database.yml
 config/deploy.yml
 coverage
 doc
-log
-tmp
