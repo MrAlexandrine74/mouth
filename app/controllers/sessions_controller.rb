@@ -1,7 +1,10 @@
-# This controller handles the login/logout function of the site.  
+# This controller handles the login/logout function of the site.
 class SessionsController < ApplicationController
+  layout 'admin'
+  
   # render new.rhtml
   def new
+    create if request.post?
   end
 
   def create
@@ -14,6 +17,7 @@ class SessionsController < ApplicationController
       redirect_back_or_default(current_user.is_admin? ? admin_url : '/')
       flash[:notice] = "Logged in successfully"
     else
+      flash[:error] = "There was a problem with your login details."
       render :action => 'new'
     end
   end
