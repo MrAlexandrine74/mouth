@@ -45,7 +45,7 @@ class Admin::PostsController < AdminController
     respond_to do |format|
       if @post.save
         flash[:notice] = 'Post was successfully created.'
-        format.html { redirect_to([:admin, @post]) }
+        format.html { redirect_to(admin_posts_path(@post.id)) }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
       else
         format.html { render :action => "new" }

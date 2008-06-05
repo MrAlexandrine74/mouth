@@ -1,5 +1,7 @@
 # This controller handles the login/logout function of the site.
 class SessionsController < ApplicationController
+  before_filter :block_logged_in
+  
   layout 'admin'
   
   # render new.rhtml

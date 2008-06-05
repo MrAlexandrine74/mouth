@@ -2,11 +2,20 @@
 - if @posts.empty?
   %p Dude! What's a blog without posts? Get to work!
 - else
-  %ul  
-    - @posts.each do |post|
-      %li
-        = link_to post, admin_post_path(post.id)
-        = link_to 'Edit', edit_admin_post_path(post.id)
-        = link_to 'Destroy', admin_post_path(post.id), :confirm => 'Are you sure?', :method => :delete
+  %table
+    %thead
+      %td.title Title
+      %td{:colspan => 2} Actions
+    %tbody
+      - @posts.each do |post|
+        %td.title= post.title
+        %td= link_to 'Edit', edit_admin_post_path(post.id)
+        %td= link_to 'Destroy', admin_post_path(post.id), :confirm => 'Are you sure?', :method => :delete
+  / %ul
+  /   - @posts.each do |post|
+  /     %li
+  /       = link_to post, admin_post_path(post.id)
+  /       = link_to 'Edit', edit_admin_post_path(post.id)
+  /       = link_to 'Destroy', admin_post_path(post.id), :confirm => 'Are you sure?', :method => :delete
 
 %p= link_to 'New post', new_admin_post_path

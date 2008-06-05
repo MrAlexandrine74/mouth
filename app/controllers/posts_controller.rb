@@ -3,7 +3,6 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.published
-    # todo: published
 
     respond_to do |format|
       format.html # index.html.erb

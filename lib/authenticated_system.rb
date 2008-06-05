@@ -55,6 +55,11 @@ module AuthenticatedSystem
     def admin_required
       (authorized? && current_user.admin?) || access_denied
     end
+    
+    # Block users that are logged in
+    def block_logged_in
+      authorized? && redirect_to(admin_url)
+    end
 
     # Redirect as appropriate when an access request fails.
     #

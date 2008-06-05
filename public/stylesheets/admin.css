@@ -76,3 +76,22 @@ html, body {
     border-bottom: 1px solid #8b8b8b;
     padding-bottom: 15px;
     margin-bottom: 10px; }
+
+table {
+  width: 100%;
+  border: 1px solid #e2dddd; }
+  table td {
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px; }
+  table thead {
+    border: 2px solid #f0f;
+    background: #4a3f3f;
+    color: #fff; }
+    table thead td.title {
+      background: #473030;
+      border-right: 1px solid #755e5e;
+      width: 80%; }
+  table tbody td.title {
+    background: #f6f6f6;
+    border-right: 1px solid #e0e0e0; }
