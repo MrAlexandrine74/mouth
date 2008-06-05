@@ -1,7 +1,14 @@
-body {
+html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1.6; }
+
+#flash {
+  color: #fff;
+  background: #3a2929 url(/images/flash.gif) right no-repeat;
+  border-bottom: 1px solid #695d5d;
+  padding: 4px;
+  padding-left: 10px; }
 
 .button {
   float: left;
@@ -16,6 +23,7 @@ body {
   -moz-border-radius: 5px; }
 
 #header {
+  position: relative;
   background: #680b06;
   color: #fff; }
   #header h1 {
