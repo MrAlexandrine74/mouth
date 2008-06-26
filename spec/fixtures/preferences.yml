@@ -1,0 +1,11 @@
+defaults: &defaults
+  preferred_type: global
+  preferrer_type: global
+  preferred_id: 1
+  preferrer_id: 1  
+
+site_name:
+  name: site_name
+  value: Untitled Mouth Blog
+  <<: *defaults
+  

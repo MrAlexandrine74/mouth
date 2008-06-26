@@ -11,6 +11,8 @@ Spec::Runner.configure do |config|
   # in your config/boot.rb
   config.use_transactional_fixtures = true
   config.use_instantiated_fixtures  = false
+  
+  config.global_fixtures = :users, :preferences
 
   include AuthenticatedTestHelper
 

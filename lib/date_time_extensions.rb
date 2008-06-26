@@ -6,7 +6,10 @@ class Time
   end
   
   def pretty_print
-    ampm = self.strftime("%p").downcase
-    self.strftime("%l:%M#{ampm}, %b #{self.ordanalized_day} %Y").strip
+    self.strftime("%l:%M#{lowercase_ampm}, #{self.ordanalized_day} %B %Y").strip
+  end
+  
+  def lowercase_ampm
+    self.strftime("%p").downcase
   end
 end

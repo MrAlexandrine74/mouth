@@ -36,13 +36,9 @@ class Preference < ActiveRecord::Base
   end
   
   def self.get(name, reload=false)
-    global_name = name.to_s.underscore.downcase # this isn't working
+    global_name = name.to_s.underscore.downcase # FIXME: this isn't working
     eval ("
-    if reload == false
-      @#{global_name} ||= Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
-    else
-      @#{global_name} = Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
-    end
+    @#{global_name} #{"||" unless reload}= Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
     @#{global_name}.value unless @#{global_name}.nil?
     ")
   end
