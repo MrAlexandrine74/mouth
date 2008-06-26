@@ -5,7 +5,7 @@ class ChangePostsToEntries < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :table_name, :column_name
-    remove_column :entries, :type
+    remove_column :entries, :posts
+    remove_column :posts, :type
   end
 end
