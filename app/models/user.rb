@@ -21,6 +21,8 @@ require 'digest/sha1'
 class User < ActiveRecord::Base
   has_many      :posts
   
+  ACCAPTABLE_LOGIN_STATES = %w(admin active)
+  
   # Virtual attribute for the unencrypted password
   attr_accessor :password
 
@@ -74,13 +76,8 @@ class User < ActiveRecord::Base
   # Authenticates a user by their login name and unencrypted password. Also expects the user to be in certain states.
   # Returns the user or nil.
   def self.authenticate(login, password)
-    u = find :first, :conditions => {:login => login, :state => User.accepted_login_states} # need to get the salt
+    u = find :first, :conditions => {:login => login, :state => ACCAPTABLE_LOGIN_STATES } # need to get the salt
     u && u.authenticated?(password) ? u : nil
-  end
-
-  # Accepted user#states for logging in.
-  def self.accepted_login_states
-    %w(admin active)
   end
 
   # Encrypts some data with the salt.

@@ -1,9 +1,5 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-# Be sure to include AuthenticatedTestHelper in spec/spec_helper.rb instead
-# Then, you can remove it from this and the units test.
-include AuthenticatedTestHelper
-
 describe SessionsController do
   fixtures :users
 
@@ -11,6 +7,16 @@ describe SessionsController do
     post :create, :login => 'quentin', :password => 'test'
     session[:user_id].should_not be_nil
     response.should be_redirect
+  end
+
+  it "logs in and takes you to the root url if not an admin" do
+    post :create, :login => "quentin", :password => "test"
+    response.should redirect_to(root_url)
+  end
+  
+  it "logs in and takes you to the admin write post page if admin" do
+    post :create, :login => "superman", :password => "test"
+    response.should redirect_to(new_admin_post_path)
   end
 
   it 'fails login and does not redirect' do

@@ -5,7 +5,7 @@ describe Preference do
   
   describe ".get" do
     it "should return correct value" do
-      Preference.get("site_name").should eql("Untitled Mouth Blog")
+      Preference.get("site_name", true).should eql("Untitled Mouth Blog")
     end
   end
   
