@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20080509164356
+# Schema version: 20080626021705
 #
 # Table name: preferences
 #
@@ -14,31 +14,22 @@
 
 class Preference < ActiveRecord::Base
   
-  belongs_to :preferrer, :polymorphic => true
-  belongs_to :preferred, :polymorphic => true
-  
-  serialize :value
   validates_length_of     :name, :within => 1..128
-  validates_uniqueness_of :name, :on => :create, :scope => [ :preferrer_id, :preferrer_type, 
-                                                             :preferred_id, :preferred_type ]
-                                                             
-  def self.global_preference
-    { :preferred_type => 'global', :preferrer_type => 'global', :preferred_id => 1, :preferrer_id => 1 }
-  end
+  validates_uniqueness_of :name
   
+  # Set a preference and return its value
   def self.set(name, value)
-    if pref = get(name)
-      pref.update_attribute(:value, value)
-    else
-      pref = Preference.create( { :name => name, :value => value }.merge(global_preference) )
-    end
-    pref.value unless pref.nil?
+    pref = self.find_or_initialize_by_name(name)
+    pref.value = value
+    pref.save!
+    pref.value
   end
   
+  # Get a preference and return its value column
   def self.get(name, reload=false)
     global_name = name.to_s.underscore.downcase # FIXME: this isn't working
     eval ("
-    @#{global_name} #{"||" unless reload}= Preference.find(:first, :conditions => { :name => name }.merge(self.global_preference))
+    @#{global_name} #{"||" unless reload}= Preference.find(:first, :conditions => { :name => name })
     @#{global_name}.value unless @#{global_name}.nil?
     ")
   end

@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20080509164356
+# Schema version: 20080626021705
 #
 # Table name: users
 #
@@ -14,6 +14,7 @@
 #  remember_token_expires_at :datetime        
 #  state                     :string(255)     default("passive")
 #  deleted_at                :datetime        
+#  admin                     :boolean(1)      
 #
 
 require 'digest/sha1'
@@ -39,7 +40,6 @@ class User < ActiveRecord::Base
 
   attr_accessible           :login, :email, :password, :password_confirmation
 
-  acts_as_preferenced
   acts_as_state_machine :initial => :pending
   state :passive
   state :pending

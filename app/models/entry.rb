@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20080509164356
+# Schema version: 20080626021705
 #
 # Table name: entries
 #
