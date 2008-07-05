@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(:version => 20080509164356) do
     t.string   "title"
     t.text     "excerpt"
     t.text     "body"
-    t.string   "state",                      :default => "draft"
+    t.string   "state",        :default => "draft"
     t.datetime "published_at"
-    t.integer  "user_id",      :limit => 11
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "type"
