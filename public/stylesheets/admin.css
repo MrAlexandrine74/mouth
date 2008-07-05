@@ -1,60 +1,100 @@
-/*
-Sass::SyntaxError: Invalid attribute: ":background ".
-on line 117 of /Users/zachinglis/Sites/Rails/mouth/public/stylesheets/sass/admin.sass
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6; }
 
-113:       border-right: 1px solid #e0e0e0
-114: 
-115: .button
-116:   -moz-border-radius: 5px
-117:   background:
+#flash {
+  color: #fff;
+  background: #3a2929 url(/images/flash.gif) right no-repeat;
+  border-bottom: 1px solid #695d5d;
+  padding: 4px;
+  padding-left: 10px; }
 
+.button {
+  float: left;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background: #fff;
+  border: 1px solid #fff;
+  text-decoration: inherit;
+  -moz-border-radius: 5px; }
 
-Backtrace:
-/Users/zachinglis/Sites/Rails/mouth/public/stylesheets/sass/admin.sass:117
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/attr_node.rb:20:in `to_s'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/rule_node.rb:75:in `to_s'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/rule_node.rb:75:in `map'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/rule_node.rb:75:in `to_s'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/node.rb:26:in `to_s'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/node.rb:22:in `each'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/tree/node.rb:22:in `to_s'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/engine.rb:88:in `render'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/plugin.rb:61:in `update_stylesheets'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/plugin.rb:46:in `each'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/plugin.rb:46:in `update_stylesheets'
-/Users/zachinglis/Sites/Rails/mouth/vendor/gems/haml-1.9.0/lib/sass/plugin/rails.rb:16:in `process_without_test'
-/Users/zachinglis/Sites/Rails/mouth/vendor/rails/actionpack/lib/action_controller/test_process.rb:16:in `process'
-/Users/zachinglis/Sites/Rails/mouth/vendor/rails/actionpack/lib/action_controller/test_process.rb:394:in `process'
-/Users/zachinglis/Sites/Rails/mouth/vendor/rails/actionpack/lib/action_controller/test_process.rb:365:in `post'
-./spec/controllers/users_controller_spec.rb:53:in `create_user'
-./spec/controllers/users_controller_spec.rb:46
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/matchers/change.rb:31:in `call'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/matchers/change.rb:31:in `execute_change'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/matchers/change.rb:20:in `matches?'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/expectations/handler.rb:51:in `handle_matcher'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/expectations/extensions/object.rb:54:in `should_not'
-./spec/controllers/users_controller_spec.rb:45
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_methods.rb:84:in `instance_eval'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_methods.rb:84:in `run_with_description_capturing'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_methods.rb:21:in `execute'
-/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_methods.rb:18:in `execute'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:303:in `execute_examples'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:302:in `each'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:302:in `execute_examples'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/runner/options.rb:104:in `run_examples'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
-/Users/zachinglis/Sites/Rails/mouth/vendor/plugins/rspec/bin/spec:4
-/usr/local/lib/ruby/gems/1.8/gems/rcov-0.8.1.2.0/bin/rcov:554:in `load'
-/usr/local/lib/ruby/gems/1.8/gems/rcov-0.8.1.2.0/bin/rcov:554
-/usr/local/bin/rcov:19:in `load'
-/usr/local/bin/rcov:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: Invalid attribute: \":background \".\A on line 117 of /Users/zachinglis/Sites/Rails/mouth/public/stylesheets/sass/admin.sass\A \A 113:       border-right: 1px solid #e0e0e0\A 114: \A 115: .button\A 116:   -moz-border-radius: 5px\A 117:   background:\A "; }
+#header {
+  position: relative;
+  background: #680b06;
+  color: #fff; }
+  #header h1 {
+    font-size: 12px;
+    padding: 20px; }
+    #header h1 a {
+      text-decoration: inherit; }
+  #header a {
+    color: inherit; }
+  #header ul#navigation {
+    position: absolute;
+    top: 20px;
+    right: 50px; }
+    #header ul#navigation li {
+      float: left;
+      margin-left: 25px; }
+    #header ul#navigation ul {
+      display: none; }
+  #header ul#subnavigation {
+    height: 20px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    color: #000;
+    font-size: 11px;
+    text-transform: lowercase; }
+    #header ul#subnavigation li a {
+      float: left;
+      padding: 3px;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin-left: 6px;
+      margin-right: 6px;
+      background: #fff;
+      border: 1px solid #fff;
+      text-decoration: inherit;
+      -moz-border-radius: 5px; }
+      #header ul#subnavigation li a:hover {
+        border: 1px solid #e6e1e1; }
+
+#page {
+  padding: 30px; }
+  #page h2 {
+    font-size: 2em;
+    color: #8b8b8b;
+    border-bottom: 1px solid #8b8b8b;
+    padding-bottom: 15px;
+    margin-bottom: 10px; }
+
+table {
+  width: 100%;
+  border: 1px solid #e2dddd; }
+  table td {
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px; }
+  table thead {
+    border: 2px solid #f0f;
+    background: #4a3f3f;
+    color: #fff; }
+    table thead td.title {
+      background: #473030;
+      border-right: 1px solid #755e5e;
+      width: 80%; }
+  table tbody td.title {
+    background: #f6f6f6;
+    border-right: 1px solid #e0e0e0; }
+
+.button {
+  -moz-border-radius: 5px; }
