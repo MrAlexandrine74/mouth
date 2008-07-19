@@ -1,4 +1,6 @@
 config/database.yml
 config/deploy.yml
+db/*.sqllite*
+db/schema.rb
 coverage
 doc
