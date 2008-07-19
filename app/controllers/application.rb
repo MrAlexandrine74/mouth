@@ -11,6 +11,11 @@ class ApplicationController < ActionController::Base
   
   # Shortcut for getting preference for ease.
   def pref(name, reload=false)
-    Preference.get(name, reload)
+    Preference.get(name.to_s, reload)
+  end
+  
+  before_filter :set_theme
+  def set_theme
+    eval "self.prepend_view_path '#{RAILS_ROOT}/vendor/themes/#{pref(:theme)}'"
   end
 end

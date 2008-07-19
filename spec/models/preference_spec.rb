@@ -5,7 +5,7 @@ describe Preference do
   
   describe ".get" do
     it "should return correct value" do
-      Preference.get("site_name", true).should eql("Untitled Mouth Blog")
+      Preference.get("name", true).should eql("Untitled Mouth Blog")
     end
   end
   
@@ -18,9 +18,9 @@ describe Preference do
     
     it "should save a new value to an old preference" do
       lambda do
-        Preference.set("site_name", "My Site").should eql("My Site")
+        Preference.set("name", "My Site").should eql("My Site")
       end.should_not change { Preference.count }
-      Preference.get("site_name", true).should eql("My Site")
+      Preference.get("name", true).should eql("My Site")
     end
   end
 end

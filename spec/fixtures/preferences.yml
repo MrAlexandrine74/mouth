@@ -1,3 +1,6 @@
-site_name:
+name:
   name: site_name
   value: Untitled Mouth Blog  
+theme:
+  name: theme
+  value: simple
