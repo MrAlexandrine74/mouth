@@ -4,7 +4,9 @@ module ApplicationHelper
     @page_title.nil? ? pref('name') : "#{pref('name')} &raquo; #{@page_title}"
   end
   
-  def mini_page_title
+  def small_page_title
     @page_title || pref('name')
   end
+  
+  
 end
