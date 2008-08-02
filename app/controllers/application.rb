@@ -14,8 +14,14 @@ class ApplicationController < ActionController::Base
     Preference.get(name.to_s, reload)
   end
   
+  def theme_path
+    "#{RAILS_ROOT}/vendor/themes/#{pref(:theme)}"
+  end
+  
   before_filter :set_theme
   def set_theme
-    eval "self.prepend_view_path '#{RAILS_ROOT}/vendor/themes/#{pref(:theme)}'"
+    # stylesheets controller, mime/type etc
+    eval "self.prepend_view_path '#{theme_path}'"
   end
+  
 end
