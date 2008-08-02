@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.stylesheet  "stylesheets/:id.css",            :controller => "stylesheets", :action => "show"
+  
   # Resources
   map.namespace   :admin do |admin|
     admin.resources :posts
