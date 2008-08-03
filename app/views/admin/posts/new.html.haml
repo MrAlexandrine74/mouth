@@ -1,5 +1,4 @@
 %h2 New Post
-%h3 Another
 
 - form_for(@post, :url => admin_post_path(@post.id)) do |make|
   = make.error_messages
@@ -16,12 +15,12 @@
     = make.label        :body
     = make.text_area    :body
   %p
-    = make.label :state_draft, "Draft"
+    = make.label :state
+    = make.label :state_draft, "Draft", :class => "inline"
     = make.radio_button :state, :draft
-    = make.label :state_private, "Private"
+    = make.label :state_private, "Private", :class => "inline"
     = make.radio_button :state, :private
-    = make.label :state_published, "Published"
+    = make.label :state_published, "Published", :class => "inline"
     = make.radio_button :state, :published
+  .clear
   %p= make.submit     "Create"
-  
-%p= link_to "Back", admin_posts_path

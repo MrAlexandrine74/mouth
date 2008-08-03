@@ -8,9 +8,10 @@
       %td{:colspan => 2} Actions
     %tbody
       - @posts.each do |post|
-        %td.title= post.title
-        %td= link_to 'Edit', edit_admin_post_path(post.id)
-        %td= link_to 'Destroy', admin_post_path(post.id), :confirm => 'Are you sure?', :method => :delete
+        %tr{:class => cycle("alt", '')}
+          %td.title= post.title
+          %td= link_to 'Edit', edit_admin_post_path(post.id)
+          %td= link_to 'Destroy', admin_post_path(post.id), :confirm => 'Are you sure?', :method => :delete
   / %ul
   /   - @posts.each do |post|
   /     %li
