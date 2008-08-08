@@ -1,4 +1,4 @@
-%h2 New Post
+%h2= page("New Post")
 
 - form_for(@post, :url => admin_post_path(@post.id)) do |make|
   = make.error_messages
