@@ -17,6 +17,8 @@ class Preference < ActiveRecord::Base
   validates_length_of     :name, :within => 1..128
   validates_uniqueness_of :name
   
+  alias_attribute         :to_param, :name
+  
   # Set a preference and return its value
   def self.set(name, value)
     pref = self.find_or_initialize_by_name(name)
@@ -33,4 +35,5 @@ class Preference < ActiveRecord::Base
     @#{global_name}.value unless @#{global_name}.nil?
     ")
   end
+  
 end
