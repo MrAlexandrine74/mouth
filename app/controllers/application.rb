@@ -26,6 +26,7 @@ class ApplicationController < ActionController::Base
   
   before_filter :set_theme
   def set_theme
+    # TODO: Remove the evals and do it more cleanly.
     # stylesheets controller, mime/type etc
     eval "self.prepend_view_path '#{theme_path}'"
   end

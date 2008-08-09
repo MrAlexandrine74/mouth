@@ -21,9 +21,8 @@ class Preference < ActiveRecord::Base
   
   # Set a preference and return its value
   def self.set(name, value)
-    pref = self.find_or_initialize_by_name(name)
-    pref.value = value
-    pref.save!
+    pref = Preference.find_or_initialize_by_name(name)
+    pref.update_attribute 'value', value
     pref.value
   end
   
@@ -34,6 +33,13 @@ class Preference < ActiveRecord::Base
     @#{global_name} #{"||" unless reload}= Preference.find(:first, :conditions => { :name => name })
     @#{global_name}.value unless @#{global_name}.nil?
     ")
+  end
+  
+  def self.update_multiple(preference_hash)
+    preference_hash.each do |key, value|
+      logger.info "Setting preference: #{key.to_s}, #{value}"
+      Preference.set(key.to_s, value)
+    end
   end
   
 end

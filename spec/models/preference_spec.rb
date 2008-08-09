@@ -23,4 +23,17 @@ describe Preference do
       Preference.get("name", true).should eql("My Site")
     end
   end
+  
+  describe ".update_multiple" do
+    it "should update multiple rows of preferences" do
+      preferences = {
+        :name   => 'testing',
+        :theme  => 'testing',
+        :url    => 'http://local.testing'
+      }
+      lambda do
+        Preference.update_multiple(preferences)
+      end.should change { Preference.get("theme", true) }
+    end
+  end
 end
