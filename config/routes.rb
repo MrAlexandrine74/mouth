@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   # Resources
   map.namespace   :admin do |admin|
     admin.resources :posts
-    admin.resources :preferences
+    admin.resource  :preferences
   end
   
   map.resources   :posts  

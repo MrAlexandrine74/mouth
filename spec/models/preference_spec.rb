@@ -24,15 +24,15 @@ describe Preference do
     end
   end
   
-  describe ".update_multiple" do
-    it "should update multiple rows of preferences" do
+  describe ".update_many" do
+    it "should update many rows of preferences" do
       preferences = {
         :name   => 'testing',
         :theme  => 'testing',
         :url    => 'http://local.testing'
       }
       lambda do
-        Preference.update_multiple(preferences)
+        Preference.update_many(preferences)
       end.should change { Preference.get("theme", true) }
     end
   end

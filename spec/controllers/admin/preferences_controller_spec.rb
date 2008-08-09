@@ -5,7 +5,7 @@ describe Admin::PreferencesController do
 
   # TODO: Make this part of a global admin_spec and use It Should Behave Like
   it "requires logging admin privallages" do
-    get :index
+    get :edit
     response.should redirect_to(login_path)
   end
 
@@ -16,24 +16,18 @@ describe Admin::PreferencesController do
     
     describe "list action" do
       it "should get a collection of preferences" do
-        get :index
+        get :edit
         assigns(:preferences).should_not be_empty
       end
     end
   
     describe "edit action" do
-      it "should get a preference" do
-        get :edit, :id => "name"
-        assigns(:preference).should_not be_nil
-        response.should be_success
-      end
-      
-      it "should update the preference" do
-        put :update, :id => "name", :value => "simple"
-        assigns(:preference).should_not be_nil
+      it "should succesfully complete the action" do
+        Preference.should_receive(:update_many).once.and_return(true)
+        put :update, :preferences => { :name => "simple", :theme => "fuschia" }
+        assigns(:preferences).should_not be_nil
         response.should be_redirect
       end
     end
   end
-
 end

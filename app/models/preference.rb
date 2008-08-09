@@ -35,8 +35,8 @@ class Preference < ActiveRecord::Base
     ")
   end
   
-  def self.update_multiple(preference_hash)
-    preference_hash.each do |key, value|
+  def self.update_many(preference_hash)
+    preference_hash.collect do |key, value|
       logger.info "Setting preference: #{key.to_s}, #{value}"
       Preference.set(key.to_s, value)
     end
