@@ -36,4 +36,11 @@ describe Preference do
       end.should change { Preference.get("theme", true) }
     end
   end
+  
+  describe "#to_key_and_value_pair" do
+    it "should grab preferences and return key and pair value" do
+      preferences = Preference.all.to_key_and_value_pair
+      preferences.should include([preferences(:theme).name, preferences(:theme).value])
+    end
+  end
 end

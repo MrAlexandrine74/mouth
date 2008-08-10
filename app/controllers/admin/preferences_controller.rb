@@ -1,11 +1,21 @@
 class Admin::PreferencesController < AdminController
+  def create
+    update
+  end
+  
+  def show
+    edit
+    render :action => "edit"
+  end
+  
   def edit
-    @preferences = Preference.all
+    @preferences = Preference.all.to_key_and_value_pair
   end
   
   def update
-    @preferences = Preference.update_many(params[:preferences])
+    Preference.update_many(params[:preferences])
+    @preferences = Preference.all.to_key_and_value_pair
     flash[:success] = "Preferences have been updated"
-    redirect_to edit_admin_preferences_path
+    render :action => "edit"
   end
 end

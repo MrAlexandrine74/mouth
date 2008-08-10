@@ -150,3 +150,6 @@ textarea {
   font-weight: bold;
   text-align: right;
   color: #e5d9d9; }
+
+label {
+  font-weight: bold; }

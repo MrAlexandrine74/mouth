@@ -1,0 +1,6 @@
+%h2= page("Preferences")
+- form_tag admin_preferences_path do
+  - @preferences.each do |preference, value|
+    = label_tag "preferences_#{preference}", preference
+    = text_field_tag "preferences[#{preference}]", value, :id => "preference_#{preference}"
+  = submit_tag "Update"

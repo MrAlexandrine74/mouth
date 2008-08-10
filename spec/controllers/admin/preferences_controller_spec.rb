@@ -21,13 +21,14 @@ describe Admin::PreferencesController do
       end
     end
   
-    describe "edit action" do
+    describe "update action" do
       it "should succesfully complete the action" do
         Preference.should_receive(:update_many).once.and_return(true)
         put :update, :preferences => { :name => "simple", :theme => "fuschia" }
-        assigns(:preferences).should_not be_nil
-        response.should be_redirect
+        assigns(:preferences).should_not be_empty
+        response.should be_success
       end
     end
+    
   end
 end
