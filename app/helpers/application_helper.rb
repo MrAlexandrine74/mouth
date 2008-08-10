@@ -9,9 +9,8 @@ module ApplicationHelper
   end
   
   def page(title, options={})
-    render :partial => "subnavigation" unless options[:no_subnav]
+    render :partial => "subnavigation" unless options[:no_subnav] or not @admin
     @page_title = title
   end
-  
   
 end

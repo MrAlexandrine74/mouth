@@ -1,6 +1,28 @@
 %h2= page("Editing post")
 - form_for([:admin, @post]) do |make|
   = make.error_messages
+  %p
+    = make.label        :permalink
+    = make.text_field   :permalink
+  %p                    
+    = make.label        :title
+    = make.text_field   :title
+  %p                    
+    = make.label        :excerpt
+    = make.text_area    :excerpt
+  %p                    
+    = make.label        :body
+    = make.text_area    :body
+  %p
+    = make.label :state
+    = make.label :state_draft, "Draft", :class => "inline"
+    = make.radio_button :state, :draft
+    = make.label :state_private, "Private", :class => "inline"
+    = make.radio_button :state, :private
+    = make.label :state_published, "Published", :class => "inline"
+    = make.radio_button :state, :published
+  .clear
   %p= make.submit "Update"
   
-%p= "#{link_to "Show", [:admin, @post]} | #{link_to 'Back', admin_posts_path}"
+- content_for :subnavigation do
+  %li= link_to "View live post ", post_path(@post)
